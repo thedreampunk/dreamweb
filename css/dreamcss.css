@@ -1,0 +1,78 @@
+/*
+DREAMCSS
+=====================================================================  */
+
+/* ------------------------------------------------------------------ */
+/* a. Webfonts and Icon fonts
+ ------------------------------------------------------------------ */
+
+@import url("fonts.css");
+@import url("fontello/css/fontello.css");
+@import url("font-awesome/css/font-awesome.min.css");
+
+/* ------------------------------------------------------------------
+/* b. Dreamcss
+/* ------------------------------------------------------------------ */
+
+.dreamradioButton {
+	font-family:'FARRAY-Regular';
+}
+
+#activeRadioName {
+	font-family:'FARRAY-Regular';
+	color:#ffe6cc;
+}
+
+h1 {
+	font-family:'FARRAY-Regular';
+	color:#ffe6cc;
+}
+
+h2 {
+	font-family:'FARRAY-Regular';
+}
+
+h3 {
+	color : white;
+}
+
+.smoothscroll {
+	font-family:'FARRAY-Regular';
+}
+
+.notsmoothscroll {
+	font-family:'FARRAY-Regular';
+}
+a {
+	cursor: pointer;
+}
+
+/* ------------------------------------------------------------------
+/* c. Hide all until page is loaded (display bugs)
+/* ------------------------------------------------------------------ */
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }
+
+ /* ------------------------------------------------------------------
+/* dreamportrait on the left
+/* ------------------------------------------------------------------- */
+.dreamportrait {
+    float: left
+}
+.dreamportrait img {
+    display: block
+}
+
+.row {
+	margin-left: 210px
+}

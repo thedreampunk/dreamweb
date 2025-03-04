@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Metadata
+   ================================================== -->
+	<meta charset="utf-8">
+	<title>Le Dreamweb - News</title>
+	<meta name="description" content="Dreampunk's Official Website : Music, Videos and Other Stuff">
+	<meta name="author" content="Axel Bourdet">
+	<meta name="keywords" content="dreampunk, official, website, spex, spex yourself, music, musician, artist, steampunk, indie, indie music, indie pop">
+
+   <!--- Opengraph Metadata (Facebook, Twitter)
+    ================================================== -->
+	<meta property="og:title" content="Le Dreamweb">
+	<meta property="og:description" content="Dreampunk's Official Website : Music, Videos and Other Stuff">
+	<meta property="og:image" content="https://thedreampunk.com/img/fbpicture.jpg">
+	<meta property="og:url" content="https://thedreampunk.com">
+	<meta property="og:type" content="website" />
+	
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Colored header -->
+	<meta name="theme-color" content="#000000">
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="https://thedreampunk.com/css/default.css">
+	<link rel="stylesheet" href="https://thedreampunk.com/css/layout.css">
+	<link rel="stylesheet" href="https://thedreampunk.com/css/media-queries.css">
+	<link rel="stylesheet" href="https://thedreampunk.com/css/magnific-popup.css">
+	<link rel="stylesheet" href="https://thedreampunk.com/css/dreamcss.css">
+
+   <!-- Javascript
+   ================================================== -->
+	<script src="https://thedreampunk.com/js/modernizr.js"></script>
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="ttps://thedreampunk.com/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="https://thedreampunk.com/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://thedreampunk.com/js/jquery.flexslider.js"></script>
+	<script src="https://thedreampunk.com/js/waypoints.js"></script>
+	<script src="https://thedreampunk.com/js/jquery.fittext.js"></script>
+	<script src="https://thedreampunk.com/js/magnific-popup.js"></script>
+	<script src="https://thedreampunk.com/js/init.js"></script>
+	<script src="https://thedreampunk.com/js/dreamquery.js"></script>
+	<!-- GOOGLE ANALYTICS -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-79553051-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/x-icon" href="https://thedreampunk.com/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="57x57" href="https://thedreampunk.com/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://thedreampunk.com/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://thedreampunk.com/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://thedreampunk.com/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://thedreampunk.com/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://thedreampunk.com/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://thedreampunk.com/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://thedreampunk.com/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://thedreampunk.com/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="https://thedreampunk.com/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://thedreampunk.com/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://thedreampunk.com/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://thedreampunk.com/favicon/favicon-16x16.png">
+	<link rel="manifest" href="https://thedreampunk.com/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://thedreampunk.com/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+<!-- Facebook comments SCRIPT-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1945872815702221&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+   <!-- NO Header
+   ================================================== -->
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	     <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="https://thedreampunk.com/en/">Home</a></li>
+			<li class="current"><a class="smoothscroll" href="https://thedreampunk.com/en/news.html">News</a></li>
+	        <li><a class="smoothscroll" href="https://thedreampunk.com/en/#music">Music</a></li>
+            <li><a class="smoothscroll" href="https://thedreampunk.com/en/#videos">Videos</a></li>
+			<li><a class="smoothscroll" href="https://thedreampunk.com/en/shop.html">Shop</a></li>
+            <li><a class="smoothscroll" href="https://thedreampunk.com/en/#other">Misc</a></li>
+			<li><a class="smoothscroll" href="https://thedreampunk.com/en/#about">About</a></li>
+			<li><a class="smoothscroll" href="https://thedreampunk.com/en/#contact">Contact</a></li>
+			<li><a class="smoothscroll" href="https://thedreampunk.com/fr/news.html"><img src="../img/fr.png" width = "30"/></a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+    <!-- News Section
+   ================================================== -->
+   <section id="news">
+   
+		<div class="row education">
+			<br/><br/>
+			<div class="three columns header-col">
+				<h1><span>NEWS</span></h1>
+			</div>
+		 
+			<div class="nine columns main-col">
+
+				<div class="row item">
+			
+					<div class="twelve columns">
+						<!-- 2025 -->
+						<h3><i class="fa fa-cog"></i> 2025 <i class="fa fa-cog"></i></h3>
+						<!-- JANUARY -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=rE-fivUGod4" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202501-cotton-cocoon2.jpg"></img></a>
+							</aside>
+							<b>JANUARY</b><br/>
+							- <b>Cotton Cocoon</b>, with <b><a href="https://www.instagram.com/stina.simone/" target="_blank">Stina Simone</a></b><br>
+							is now available on <b><a href="https://www.youtube.com/watch?v=rE-fivUGod4" target="_blank">YouTube</a></b>,
+							<b><a href="https://open.spotify.com/intl-fr/track/0clmfejug102e9U5KvoDG0" target="_blank">Spotify</a></b>,<br>
+							<b><a href="https://music.apple.com/us/song/cotton-cocoon-feat-stina-simone/1786526061" target="_blank">Apple Music</a></b>
+							and <b><a href="https://li.sten.to/dreampunk" target="_blank">more</a></b> !
+							<br><br><br>
+						<!-- 2024 -->
+						<h3><i class="fa fa-cog"></i> 2024 <i class="fa fa-cog"></i></h3>
+						<!-- DECEMBER -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=rE-fivUGod4" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202412-cotton-cocoon1.jpg"></img></a>
+							</aside>
+							<b>DECEMBER</b><br/>
+							- Prep for the upcoming <br/>
+							release of my new music video, <br/>
+							<b><a href="https://www.youtube.com/watch?v=rE-fivUGod4" target="_blank">Cotton Cocoon</a></b>, with 
+							<b><a href="https://www.instagram.com/stina.simone/" target="_blank">Stina Simone</a></b><br>
+							<br><br>
+						<!-- SEPTEMBER -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=MKKOLBscXX8&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj&index=3" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202409-supersonic.jpg"></img></a>
+							</aside>
+							<b>SEPTEMBER</b><br/>
+							- New cover video :<br>
+							<b><a href="https://www.youtube.com/watch?v=MKKOLBscXX8&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj&index=3" target="_blank">Oasis - Supersonic</a><br></b>
+							In a different genre, for the sake of practice !<br/><br/>
+							<br>
+						<!-- JULY -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=kbbT0LL9sL4&list=PLxtJoLKBQKUkSkI5S2TgYlr-eOGr63HXx&index=2" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202407-blabla10.webp"></img></a>
+							</aside>
+							<b>JULY</b><br/>
+							- New talk video :<br/>
+							<b><a href="https://www.youtube.com/watch?v=kbbT0LL9sL4&list=PLxtJoLKBQKUkSkI5S2TgYlr-eOGr63HXx&index=2" target="_blank">Blabla #10 - Excuses & Previews</a></b><br>
+							<br><br><br>
+						<!-- MAY -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=LjOmA-j9YkE" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202405-tarte.jpg"></img></a>
+							</aside>
+							<b>MAY</b><br/>
+							Busy month ! Two creations in May :<br>
+							<b>- A parody video : <a href="https://www.youtube.com/watch?v=LjOmA-j9YkE" target="_blank">The secret of happiness</a><br>
+							- A remaster of my 2014 song, <a href="https://www.youtube.com/watch?v=YpeHZhx6JN4" target="_blank">Sweet Taste of Paradise</a><br>
+							for its 10th anniversary !</b><br/>
+							<br>
+						<!-- APRIL -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/9Jx5iIDpemQ" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202404-awol.jpg"></img></a>
+							</aside>
+							<b>APRIL</b><br/>
+							- <b>Ukulele cover of <a href="https://youtu.be/9Jx5iIDpemQ" target="_blank">Kill your heroes</a> by Awolnation</b><br>
+							<br><br><br><br>
+						<!-- MARCH -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=eky7zS8fJd0&list=PLxtJoLKBQKUl_Av6Gw9dXLI4S5lrYdWN9" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202403-backoz.jpg"></img></a>
+							</aside>
+							<b>MARCH</b><br/>
+							- <b>New video ! <a href="https://www.youtube.com/watch?v=eky7zS8fJd0&list=PLxtJoLKBQKUl_Av6Gw9dXLI4S5lrYdWN9" target="_blank">Back Oz</a></b>, an international creation <br>
+							with the fabulous <b>Chiknuts (Indonesia),<br>
+							Nico Anders (US) and GNWR (France)</b><br/>
+							<br><br>
+						<!-- FEBRUARY -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=WuZL84jzfgo&list=PLxtJoLKBQKUl_Av6Gw9dXLI4S5lrYdWN9" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202402-mechapolis.jpg"></img></a>
+							</aside>
+							<b>FEBRUARY</b><br/>
+							- <b>New song ! <a href="https://www.youtube.com/watch?v=WuZL84jzfgo&list=PLxtJoLKBQKUl_Av6Gw9dXLI4S5lrYdWN9" target="_blank">Mechapolis</a></b>,<br>
+							an answer to my previous song, <b>Night Crow</b><br/>
+							<br><br><br>	
+						<!-- JANUARY -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=UoH52Z4VX9I&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202401-got.jpg"></img></a>
+							</aside>
+							<b>JANUARY</b><br/>
+							- <b><a href="https://www.youtube.com/watch?v=UoH52Z4VX9I&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj" target="_blank">Game of Thrones family cover</a></b>,<br>
+							with <b>Edogi</b> (trombone) and <b>Boo&#xB2;</b> (guitar) <br/>
+							<br><br><br>		
+
+						<h3><i class="fa fa-cog"></i> 2023 <i class="fa fa-cog"></i></h3>
+						<!-- DECEMBER -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=4XfBco2EbzY" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202312-12Tracks24.jpg"></img></a>
+							</aside>
+							<b>DECEMBER</b><br/>
+							- <b>Join the </b><b><a href="https://www.youtube.com/watch?v=4XfBco2EbzY" target="_blank">#12Tracks24 challenge</a></b>,<br>
+							Let's create <b>one track per month</b> in 2024 !<br/>
+							<br><br><br>
+						<!-- OCTOBER -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=kUFMM50qFrE&list=PLxtJoLKBQKUkSkI5S2TgYlr-eOGr63HXx" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202310-behindcrow.jpg"></img></a>
+							</aside>
+							<b>OCTOBER</b><br/>
+							- <b>New video <a href="https://www.youtube.com/watch?v=kUFMM50qFrE&list=PLxtJoLKBQKUkSkI5S2TgYlr-eOGr63HXx" target="_blank">Behind the scenes</a></b>,<br>
+							uncovering the creation process<br/>
+							of my new song <b>Night Crow</b><br/>
+							<br><br>
+						<!-- SEPTEMBER -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=PvE_-Ne_xiU&list=PLxtJoLKBQKUl_Av6Gw9dXLI4S5lrYdWN9&index=3" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202309-nightcrow.jpg"></img></a>
+							</aside>
+							<b>SEPTEMBER</b><br/>
+							- <b>New original song and video</b> : <b><a href="https://www.youtube.com/watch?v=PvE_-Ne_xiU&list=PLxtJoLKBQKUl_Av6Gw9dXLI4S5lrYdWN9&index=3" target="_blank">Night Crow</a></b>,<br>
+							with <b><a href="https://open.spotify.com/artist/4tPMolSP1phnvVbEcUD0iq" target="_blank" >hoodie cat</a></b> and <b><a href="https://open.spotify.com/artist/1VFdbcSjpJA1TzypBiBTVW" target="_blank" >Xefi</a></b> !<br/>
+							Song is on <b><a href="https://open.spotify.com/track/3IT32NKpcDDvShhnO7ukLs" target="_blank" >Spotify</a></b>, <b><a href="https://www.deezer.com/en/album/485701005" target="_blank" >Deezer</a></b> and <b><a href="https://music.apple.com/us/album/night-crow-single/1706563666" target="_blank" >Apple Music</a></b> !<br/>
+							<br><br>
+						<!-- JULY -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=Ap4axKpr9ZE&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj&index=3" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202307-farfowls.jpg"></img></a>
+							</aside>
+							<b>JULY</b><br/>
+							- New video : <b><a href="https://www.youtube.com/watch?v=Ap4axKpr9ZE&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj&index=3" target="_blank">Far Fowls</a></b> !<br>
+							Another cover of the legend <b>Nujabes</b>,<br/>
+							after taking my chance on <b><a href="https://www.youtube.com/watch?v=j1uc5imoFWE&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj&index=1" target="_blank">Battlecry</a></b><br>
+							<br><br>
+							
+						<!-- JUNE -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.tiktok.com/@thedreampunk" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202306-tiktok.jpg"></img></a>
+							</aside>
+							<b>JUNE</b><br/>
+							- <b>Dreampunk</b> is now on <b><a href="https://www.tiktok.com/@thedreampunk" target="_blank">TikTok</a></b> !<br>
+							I feel like a boomer... But I'm excited<br/>
+							to try out new types of content !<br/>
+							<br><br>
+						<!-- APRIL -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=YLvZUHU5mbY&list=PLxtJoLKBQKUn4tj15m-w2ohamUCJzkma_&index=2" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202304-trailerfos.jpg"></img></a>
+							</aside>
+							<b>APRIL</b><br/>
+							- <b>The <a href="https://www.youtube.com/watch?v=YLvZUHU5mbY&list=PLxtJoLKBQKUn4tj15m-w2ohamUCJzkma_&index=2" target="_blank">trailer for Fistful of Sounds</a></b> is 10 years old !<br>
+							It's the 2nd and last album under the artist name <b>"SpeX Yourself !"</b><br>
+							The trailer got released on <b>14/04/13</b> and features the track <b>Kids with Drums</b>.<br>
+							<br><br>
+						<!-- FEBRUARY -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=j1uc5imoFWE&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202302-battlecry.jpg"></img></a>
+							</aside>
+							<b>FEBRUARY</b><br/>
+							- New video <b><a href="https://www.youtube.com/watch?v=j1uc5imoFWE&list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj" target="_blank">Dreamy Cover #4 - Battlecry</a></b> !<br>
+							Cover of the opening song from <b>Samurai Champloo</b><br/>
+							by  <b>Nujabes</b> and <b>Shing02</b> !
+							<br><br><br>
+						<h3><i class="fa fa-cog"></i> 2022 <i class="fa fa-cog"></i></h3>
+						<!-- NOVEMBER -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/jUtHqwt_b5M" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202211-naluminium11.PNG"></img></a>
+							</aside>
+							<b>NOVEMBER</b><br/>
+							- <b><a href="https://youtu.be/jUtHqwt_b5M" target="_blank">Naluminium</a></b> is 11 years old !<br>
+							Released on <b>11/11/11</b>, it's the first track from <b>Fistful of Sounds</b>,<br>
+							second and last album crafted under the name <b>SpeX Yourself !</b>
+							<br><br><br>						
+						<!-- OCTOBER -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=CEZBYYSYCMg" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202210-autopilot.jpg"></img></a>
+							</aside>
+							<b>OCTOBER</b><br/>
+							- <b><a href="https://www.youtube.com/watch?v=CEZBYYSYCMg" target="_blank">Dreamy Cover #3 - Auto Pilot</a></b><br>
+							After a wee holiday break + back to school,<br>
+							New cover video of Queens of the Stone Age !
+							<br><br><br>						
+						<!-- JUNE -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/Y3Fo0tGtlRE" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202206-shipwrecked.jpg"></img></a>
+							</aside>
+							<b>JUNE</b><br/>
+							- <b><a href="https://youtu.be/Y3Fo0tGtlRE" target="_blank">Let's Play #3 - Don't Starve Shipwrecked</a></b><br>
+							New gaming video on the fantastic <b>Don't Starve</b> ! Sorry it's in French<br>
+							with no subtitles - until enough people harass me to make some ;)
+							<br><br><br>
+						<!-- MAY -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/QjkCL-yb1Sk" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202205-gig.jpg"></img></a>
+							</aside>
+							<b>MAY</b><br/>
+							- <b><a href="https://youtu.be/QjkCL-yb1Sk" target="_blank">Showcase</a></b> for Neighbour's Spring 2022, <br>
+							an event set by the City of Nantes!<br>
+							<br><br><br>
+						<!-- APRIL -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/sidy14quzN4" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202204-yuugure.jpg"></img></a>
+							</aside>
+							<b>APRIL</b><br/>
+							- <b><a href="https://youtu.be/sidy14quzN4" target="_blank">Dreamy Cover #2 - Yuugure no Tori</a></b><br>
+							Thrilled to share this cover of an <b>Attack on Titan</b> ending theme,<br>
+							by the fantastic <b>Shinsei Kamattechan</b> !
+							<br><br><br>
+						<!-- MARCH -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/MXrRkEMaomg" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202203-jesters.png"></img></a>
+							</aside>
+							<b>MARCH</b><br/>
+							- Upload of <b><a href="https://youtu.be/MXrRkEMaomg" target="_blank">Jesters</a></b>, an oldie from 2009 !<br>
+							From the time the project was called "<b>SpeX Yourself !</b>".<br>
+							The <b>HyperSpeX</b> is still available <b><a href="https://thedreampunk.com/spex/en/" target="_blank">here</a></b>.
+							<br><br><br>
+						<!-- FEBRUARY -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/hK6UrBv4PFs" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202202-bla8.jpg"></img></a>
+							</aside>
+							<b>FEBRUARY</b><br/>
+							- <b>New video : <a href="https://youtu.be/hK6UrBv4PFs" target="_blank">Blabla #8 - Dreampunk VS InstaBookTubify</a></b><br>
+							After almost <b>3 years with no blabla video</b> (scandalous), I explain why<br>
+							I stepped away from the Instagram/Facebook accounts of <b>Dreampunk</b>.
+							<br><br><br>
+						<!-- JANUARY -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/J8aP4TRBQhk" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202201-donjons.jpg"></img></a>
+							</aside>
+							<b>JANUARY</b><br/>
+							- <b>New video : <a href="https://youtu.be/J8aP4TRBQhk" target="_blank">Dungeons &amp; Kittens - Episode 1</a></b><br>
+							The <b>audio recap</b> of an initiation of <b>tabletop role playing game</b> with my nephews and bro !
+							(French with EN subtitles)
+							<br><br><br>
+							
+						<h3><i class="fa fa-cog"></i> 2021 <i class="fa fa-cog"></i></h3>
+						<!-- DECEMBER -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/e7D80Z9K-vI" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202112-anemone.jpg"></img></a>
+							</aside>
+							<b>DECEMBER</b><br/>
+							- <b>New Music Video : <a href="https://youtu.be/e7D80Z9K-vI" target="_blank">Anemone (the Brian Jonestown Massacre)</a></b><br>
+							Introducing a new video series : <b>Dreamy Covers !<br></b>
+							Music covers with the Dreamy touch + feat. Le Dreamcrew ;)<br>
+							<br><br>
+						<!-- NOVEMBER-->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/tndiOBPGQK8" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202111-minet.png"></img></a>
+							</aside>
+							<b>NOVEMBER</b><br/>
+							- <b>New Parody Video : <a href="https://youtu.be/tndiOBPGQK8" target="_blank">Attack on Titan by Bernard Minet</a></b><br>
+							<b>Bernard Minet</b> used to sing a lot of anime openings in the French nineties.<br>
+							What if he had sung <b>Attack on Titan</b> ?<br>
+							<br><br>
+						<!-- MARCH -->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/YwuEyqA9VAU" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202103-jcgaming.png"></img></a>
+							</aside>
+							<b>MARCH</b><br/>
+							- <b>New Bonus Video : <a href="https://youtu.be/YwuEyqA9VAU" target="_blank">Jean Castex Gaming !</a></b><br><br>
+							<br><br><br>
+						<!-- JANUARY-->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/QiExAgGsT3M" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202101-awakening.jpg"></img></a>
+							</aside>
+							<b>JANUARY</b><br/>
+							- <b>New song : <a href="https://youtu.be/QiExAgGsT3M" target="_blank">Awakening</a></b><br><br>
+							<br><br><br>
+							
+						<h3><i class="fa fa-cog"></i> 2020 <i class="fa fa-cog"></i></h3>
+						<!-- OCTOBER-->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/Oqun-2-_2WE" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202010-prez.jpg"></img></a>
+							</aside>
+							<b>OCTOBER</b><br/>
+							- <b><a href="https://youtu.be/Oqun-2-_2WE" target="_blank">Presentation video</a></b> for the Dreampunk project !<br><br>
+							<br><br>
+						<!-- SEPTEMBER-->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/fYF6GNhVubQ" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202009-fallguys.png"></img></a>
+							</aside>
+							<b>SEPTEMBER</b><br/>
+							- Second gaming video (FR) : <b><a href="https://youtu.be/fYF6GNhVubQ" target="_blank">Fall Guys !</a></b><br>
+							- Remastered version of <b><a href="https://li.sten.to/htmm" target="_blank">How to Make Magic</a></b><br>
+							<br><br><br>
+						<!-- JULY / AUGUST-->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/m2N9WYQymCQ" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202008-harry.jpg"></img></a>
+							</aside>
+							<b>JULY / AUGUST</b><br/>
+							- Moving out + in !<br>
+							- Very first gaming video (FR) <br>
+							<b><a href="https://youtu.be/m2N9WYQymCQ" target="_blank">Dreampunk and the Crafter's Stone</a><b>
+							<br><br><br>
+						<!-- JUNE-->
+							<aside class="three columns footer-widgets">						
+							<a href="https://youtu.be/3Ir8wJEV2tY" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202006-fugeela.jpg"></img></a>
+							</aside>
+							<b>JUNE</b><br/>
+							- <b><a href="https://youtu.be/3Ir8wJEV2tY" target="_blank" >Fu-Gee-La Remix (Fugees)</a><b> <br>
+							<br><br><br><br>
+						<!-- MAY-->
+							<aside class="three columns footer-widgets">						
+								<img src="https://thedreampunk.com/img/news/202005-endlockdown.gif"></img>
+							</aside>
+							<b>MAY</b><br>
+							- End of Lockdown...?<br>
+							- Secret projects...<br>
+							<br><br>
+						<!-- MARCH / APRIL -->
+							<aside class="three columns footer-widgets">						
+							<img src="https://thedreampunk.com/img/news/202003-corona.PNG"></img>
+							</aside>
+							<b>MARCH / APRIL</b><br/>
+							- Corona &amp; Lockdown<br>
+							- Secret projects... :)<br>
+							<br><br><br>
+						<!-- FEBRUARY -->
+							<aside class="three columns footer-widgets">
+							<a href="https://store.steampowered.com/app/322330/Dont_Starve_Together/" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202002-rehab.gif"></img>
+							</a>
+							</aside>
+							<b>FEBRUARY</b><br/>
+							- Balance Rehab... break time! ;)<br>
+							<br><br><br>
+						<!-- DECEMBER / JANUARY -->
+							<aside class="three columns footer-widgets">
+							<a href="https://youtu.be/7xiavTXgHsg" target="_blank" >							
+								<img src="https://thedreampunk.com/img/news/202001-hb.jpg"></img>
+							</a>
+							</aside>
+							<b>DECEMBER / JANUARY</b><br/>
+							- Release of music video for <b><a href ="https://youtu.be/7xiavTXgHsg" target ="_blank">Hidden Basement</a></b><br>
+							- Fistful of Sounds (album #2 - 2013) now on <b><a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target = "_blank">Spotify</a></b>, 
+							<b><a href="https://www.youtube.com/watch?v=9v-_6ab3KxA&list=PLxtJoLKBQKUn4tj15m-w2ohamUCJzkma_" target = "blank">Youtube</a></b>, etc.<br>
+							- New <b><a href ="https://thedreampunk.com/en/shop.html" target ="_blank">Shop</a></b> section on the website
+							<br><br><br>
+							
+						<h3><i class="fa fa-cog"></i> 2019 <i class="fa fa-cog"></i></h3>
+						<!-- NOVEMBER -->
+							<aside class="three columns footer-widgets">
+							<a href="https://www.youtube.com/watch?v=e37xRnp8z7Y" target="_blank" >							
+								<img src="../img/news/201911-jam.jpg"></img>
+							</a>
+							</aside>
+							<b>NOVEMBER</b><br/>
+							- Video: <a href="https://www.youtube.com/watch?v=e37xRnp8z7Y" target="_blank" ><b>Cover of Jam</b></a> (Michael Jackson)
+							 with <b>Kazar / <a href="https://www.instagram.com/isaacbonan/" target="_blank">Isaac Bonan</a></b><br>
+							<br><br><br><br>
+						<!-- SEPTEMBER / OCTOBER -->
+							<aside class="three columns footer-widgets">
+							<img src="../img/news/201910-hb.jpg"></img>
+							</aside>
+							<b>SEPTEMBER / OCTOBER</b><br/>
+							- Video editing for <b>Hidden Basement</b><br>
+							<br><br><br><br>
+						<!-- JULY / AUGUST -->
+							<aside class="three columns footer-widgets">
+							<a href="https://firetechcamp.com" target="_blank" >							
+								<img src="../img/news/201907-summercamps.jpg"></img>
+							</a>
+							</aside>
+							<b>JULY / AUGUST</b><br/>
+							- <b>Summer Camps</b> with <a href="https://firetechcamp.com" target="_blank" ><b>FireTech</b></a><br>
+							- Not much on the <b>Dreampunk</b> side ;)<br>
+							<br><br><br>
+						<!-- JUNE -->
+							<aside class="three columns footer-widgets">
+							<a href="https://www.youtube.com/playlist?list=PLxtJoLKBQKUmnOfY_2nyCbuA7deFzD1wz" target="_blank" >							
+								<img src="../img/news/201906-has.jpg"></img>
+							</a>
+							</aside>
+							<b>JUNE</b><br/>
+							- <b>Album Release Party</b> in London<br>
+							- Videos: <a href="https://www.youtube.com/playlist?list=PLxtJoLKBQKUmnOfY_2nyCbuA7deFzD1wz" target="_blank" ><b>Hammersmith Acoustic Sessions</b></a><br>
+							<br><br><br>
+						<!-- MAY -->
+							<aside class="three columns footer-widgets">
+							<a href="https://ampl.ink/dp0b5" target="_blank" >							
+								<img src="../img/news/201905-opaRelease.jpg"></img>
+							</a>
+							</aside>
+							<b>MAY</b><br/>
+							- <b>ALBUM RELEASE : Outback Panic Attack !</b> - Listen <a href="https://ampl.ink/dp0b5" target="_blank" ><b>here</b></a><br/>
+							- Best way to support: <a href="https://dreampunk.bandcamp.com/" target="_blank" ><b>Buy CD/WAV/MP3</b></a> - Thank you :)<br/>
+							- Video: <b><a href="https://www.youtube.com/watch?v=M2lzC4ZaKHk">Requiem for a Dreampunk</a></b>
+							<br><br><br>
+						<!-- APRIL -->
+							<aside class="three columns footer-widgets">
+							<a href="https://www.instagram.com/thedreampunk" target="_blank" >						
+								<img src="../img/news/201904-kazar.jpg"></img>
+							</a>
+							</aside>
+							<b>APRIL</b><br/>
+							- Album : Master sent to duplication. Release preps<br/>
+							- Jams with Isaac Bonan / Kazar (<a href = "https://www.instagram.com/isaacbonan/" target="_blank" >Insta</a>/<a href = "https://www.facebook.com/bonan.isaac/" target="_blank" >Facebook<a>)<br/>
+							<br><br><br>
+						<!-- FEBRUARY / MARCH -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >						
+								<img src="../img/news/201902-london.jpg"></img>
+							</a>
+							</aside>
+							<b>FEBRUARY / MARCH</b><br/>
+							- Job search + Departure to London ! <br>
+							- Album FINAL tweaks<br/>
+							<br><br><br>							
+						<!-- JANUARY -->
+							<aside class="three columns footer-widgets">
+							<a href="https://youtu.be/t5tML75CIP8" target="_blank" >						
+								<img src="../img/news/201901-wonders.jpg"></img>
+							</a>
+							</aside>
+							<b>JANUARY</b><br/>
+							- Mixtape creation : <a href = "https://youtu.be/t5tML75CIP8" target="_blank" >Wonders Down Under</a>,<br/>
+							first aired on the French webradio <a href = "https://www.nina.fm" target="_blank" >Nina.fm</a><br>
+							- Album preparation work<br/>
+							<br><br>
+						<h3><i class="fa fa-cog"></i> 2018 <i class="fa fa-cog"></i></h3>
+						<!-- DECEMBER -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >						
+								<img src="../img/news/201812-dreamoniere2.PNG"></img>
+							</a>
+							</aside>
+							<b>DECEMBER</b><br/>
+							- La <a href = "https://www.youtube.com/watch?v=Kd0kdNVp_Wc" target="_blank" >Dreamoni&egrave;re</a>, part 2
+							<br>
+							- End of the Year break / family time :)<br/>
+							<br><br><br>
+						<!-- NOVEMBER -->
+							<aside class="three columns footer-widgets">
+							<a href="https://www.youtube.com/watch?v=Kd0kdNVp_Wc" target="_blank" >						
+								<img src="../img/news/201811-dreamoniere.PNG"></img>
+							</a>
+							</aside>
+							<b>NOVEMBER</b><br/>
+							- Back to <b>France</b> : La <a href = "https://www.youtube.com/watch?v=Kd0kdNVp_Wc" target="_blank" >Dreamoni&egrave;re</a>, creative residency<br/>
+							- (Almost) Amazing <a href = "https://www.youtube.com/watch?v=TYHNL6revY4" target="_blank" >interview</a> by French TV<br>
+							(or at least it could have been)<br/>
+							<br><br><br>
+						<!-- OCTOBER -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >						
+								<img src="../img/news/201810-hiddenBasementSettingUp.gif"></img>
+							</a>
+							</aside>
+							<b>OCTOBER</b><br/>
+							- <b>Hidden Basement</b> video shooting @ <a href = "http://bakehousestudios.com.au/" target="_blank" >Bakehouse Studios</a><br/>
+							(pic by <a href="https://www.instagram.com/jasminrockes/" target="_blank" >Jasmin Rockes</a>,
+							feat. <a href="https://www.instagram.com/vincent.s.t.x/" target="_blank" >Vince S.T.X</a>)<br/>
+							- Story writing (ongoing)<br/>
+							<br>
+						<!-- SEPTEMBER -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >							
+								<img src="../img/news/201809-euroTrip.jpg"></img>
+							</a>
+							</aside>
+							<b>SEPTEMBER</b><br/>
+							- <b>Holiday</b> break :) - Euro Trip<br/>
+							<br><br><br><br>
+						<!-- AUGUST -->
+							<aside class="three columns footer-widgets">
+							<a href="https://facebook.com/thedreampunk" target="_blank" >						
+								<img src="../img/news/201808-hiddenBasementVideoPlanning.jpg"></img>
+							</a>
+							</aside>
+							<b>AUGUST</b><br/>
+							- <b>Hidden Basement</b> Video Planning<br/>
+							with <a href="https://www.instagram.com/jasminrockes/" target="_blank" >Jasmin Rockes</a>,
+							<a href="https://www.instagram.com/vincent.s.t.x/" target="_blank" >Vince / S.T.X</a>
+							and <a href="https://www.instagram.com/khaotic_studio_production_/" target="_blank" >Lyndon / Khaotic</a>
+							<br/>
+							- Story writing (ongoing)<br/>
+							<br><br><br>
+						<!-- JULY -->
+							<aside class="three columns footer-widgets">
+							<a href="https://www.facebook.com/thedreampunk/videos/10155229317990666/" target="_blank" >							
+								<img src="../img/news/201807-hiddenBasementJam.PNG"></img>
+							</a>
+							</aside>
+							<b>JULY</b><br/>
+							- Jamming with <b>Vince</b> : <a href="https://www.facebook.com/thedreampunk/videos/10155229317990666/" target="_blank" >Hidden Basement</a> (video)<br/>
+							- <a href="https://www.youtube.com/watch?v=yrrlImMnM44" target="_blank" >Interview</a> by <b>Cl&eacute;a</b> aka <a href="https://www.facebook.com/Dreamingraccoon/" target="_blank" >Dreaming Raccoon</a><br>
+							<br><br><br>
+						<!-- JUNE -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >							
+								<img src="../img/news/201806-tedxmonash.jpg"></img>
+							</a>
+							</aside>
+							<b>JUNE</b><br/>
+							- Ukulele Live Show at <b>TEDxMonashUniversity</b><br/>
+							(pic by <a href="http://instagram.com/jtogotzes" target="_blank" >@jtogotzes</a>)<br>
+							<br><br><br>
+						<!-- MAY -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >							
+								<img src="../img/news/201805-minilive7.PNG"></img>
+							</a>
+							</aside>
+							<b>MAY</b><br/>
+							- <a href="https://www.youtube.com/watch?v=L7IFd99i7kY" target="_blank" ><b>Mini-Live #7</b></a> in Sydney<br/>
+							- Song writing / Jamming with <b>Vince</b><br/>
+							New song called <b>Vertigo</b><br/>
+							<br/><br>
+						<!-- APRIL -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >							
+								<img src="../img/news/201804-vincedrums.PNG"></img>
+							</a>
+							</aside>
+							<b>APRIL</b><br/>
+							- Drum recording with <b>Vince</b><br/>
+							New song called <b>Hidden Basement</b><br/> 
+							- Creating the <b>NEWS</b> section of the website<br/>
+							<br/><br>
+							
+						<!-- MARCH -->
+							<aside class="three columns footer-widgets">
+								<a href="https://www.youtube.com/watch?v=ZDKraxjhleg" target="_blank" >
+									<img src="../img/news/201803-ctw1.2.jpg"></img>
+								</a>
+							</aside>
+							<b>MARCH</b><br/>
+							- Recording (part 2) with <b>Vince</b><br/>
+							New song called <b>the Re-Introduction</b><br/> 
+							- <a href="https://www.youtube.com/watch?v=ZDKraxjhleg" target="_blank" ><b>Cover the World #1.2</b></a> with <b>Cika</b><br/>
+							<br/><br>
+							
+						<!-- FEBRUARY -->
+							<aside class="three columns footer-widgets">
+							<a href="http://instagram.com/thedreampunk" target="_blank" >
+								<img src="../img/news/201802-re-intro.jpg"></img>
+							</a>
+							</aside>
+							<b>FEBRUARY</b><br/>
+							- Design + Release <b>new website</b><br/>
+							- Recording (part 1) with <b>Vince</b><br/>
+							New song called <b>the Re-Introduction</b><br/>
+							<br/><br/>
+							
+							<h3><i class="fa fa-cog"></i> Enough ? <i class="fa fa-cog"></i></h3> 
+							<p><a href="../EN.html">
+								Go back !
+							</a></p>
+					</div>
+		 
+				</div>
+		
+			</div>
+		
+		</div>
+
+   </section>
+ 
+   <!-- Contact Section
+   ================================================== -->
+    <center>
+	<section id="contact">
+
+<br/>
+<!-- FACEBOOK BANNER -->
+<div class="fb-page" 
+  data-href="https://www.facebook.com/thedreampunk"
+  data-width="380" 
+  data-hide-cover="false"
+  data-show-facepile="false"
+  data-colorscheme="light"
+  style="filter:alpha(opacity=1); opacity:1;"></div>
+  <br/><br/>
+  <h2 style="color:#fff;"><i class="fa fa-envelope"></i> : me@thedreampunk.com</h2>
+  
+  </center>
+
+   </section> <!-- Contact Section End-->
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://facebook.com/thedreampunk" target = "_blank"><i class="fa fa-facebook"></i></a></li>
+			   <li><a href="https://www.youtube.com/c/dreampunk" target = "_blank"><i class="fa fa-youtube"></i></a></li>
+			   <li><a href="https://soundcloud.com/thedreampunk" target = "_blank"><i class="fa fa-soundcloud"></i></a></li>
+			   <li><a href="https://twitter.com/thedreampunk" target = "_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.instagram.com/thedreampunk" target = "_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+			
+			<!-- LICENCE RIGHTS -->
+			<br/>
+           <ul class="copyright">
+				<li>Original web template by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> &copy; Copyright 2014 CeeVee</li><br/>
+				<li>Website twist and all content : &copy; Copyright Dreampunk 2019 - Some Rights Reserved</li><br/>
+            </ul>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="https://thedreampunk.com/img/licence_creative_commons.png" alt="Licence Creative Commons"/></a><br/>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+   <script src="js/dreamquery.js"></script>
+
+</body>
+
+<!-- GOOGLE ANALYTICS -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79553051-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
