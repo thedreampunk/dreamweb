@@ -1,5 +1,7 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.thedreampunk.com/$1 [R,L]
+LoadModule proxy_module modules/mod_proxy.so
+LoadModule proxy_http_module modules/mod_proxy_http.so
 ErrorDocument 404 https://thedreampunk.com/404.html
 ErrorDocument 403 https://thedreampunk.com/403.html
