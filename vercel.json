@@ -1,5 +1,5 @@
 {
-    "rewrites": [
-      { "source": "/en", "destination": "/en" }
+    "redirects": [
+      { "source": "/en", "destination": "https://thedreampunk.vercel.app/en" }
     ]
   }
