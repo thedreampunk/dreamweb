@@ -32,7 +32,8 @@
 
 body { background: #0f0f0f; }
 
-div {z-index: 300;}
+div {z-index: 100;}
+
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -146,28 +147,27 @@ header .scrolldown a:hover { color: #11ABB0; }
 	 padding: 0;
 	 border: none;
 	 outline: none;
+    background-color: #0D0D0D;
 }
 
 /* nav-wrap */
 #nav-wrap {
-   font: 14px 'opensans-bold', sans-serif;
+   
+   font: 18px 'opensans-bold', sans-serif;
    width: 100%;
    text-transform: uppercase;
    letter-spacing: 2.5px;
    margin: 0 auto;
-   z-index: 100;
+   z-index: 301;
    position: fixed;
    left: 0;
    top: 0;
-   text-shadow:
-      1px 1px 2px rgb(0, 0, 0),
-      0 0 1em rgb(0, 0, 0),
-      0 0 0.2em rgba(0, 0, 255, 0.47);
+   
 }
 .opaque { background-color: #333; }
 
 /* hide toggle button */
-#nav-wrap > a.mobile-btn { display: none; }
+/* #nav-wrap > a.mobile-btn { display: none; } */
 
 ul#nav {
    min-height: 48px;
@@ -507,8 +507,6 @@ ul#nav li.current a { color: #F06000; }
 .portfolio-item .item-wrap .link-icon {
    display: block;
    color: #fff;
-   /*height: 30px;
-   width: 30px;*/
    font-size: 18px;
    line-height: 30px;
    text-align: center;
@@ -681,28 +679,8 @@ call-to-action .button {
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
 
-#testimonials {
-   background: #1F1F1F url(../img/background-dreampunk.jpg) no-repeat center center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
-   background-attachment: fixed;
 
-   position: relative;
-   min-height: 200px;
-   width: 100%;
-   overflow: hidden;
-}
-#testimonials .text-container {
-   padding-top: 96px;
-   padding-bottom: 66px;
-}
-#testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
-}
-#testimonials h1 span { display: none; }
+
 #testimonials .header-col { padding-top: 9px; }
 #testimonials .header-col h1:before {
    font-family: 'FontAwesome';
@@ -732,8 +710,9 @@ call-to-action .button {
    color: #fff
 }
 #testimonials blockquote cite {
+   font-family: 'FARRAY-Regular';
    display: block;
-   font-size: 12px;
+   font-size: 16px;
    font-style: normal;
    line-height: 18px;
    color: #fff;
