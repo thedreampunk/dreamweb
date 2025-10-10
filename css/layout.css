@@ -30,6 +30,8 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
+body { background: #0f0f0f; }
+
 div {z-index: 300;}
 
 /* ------------------------------------------------------------------ */
@@ -72,6 +74,7 @@ header .banner-text h1 {
    color: #fff;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
+   text-align: center;
    text-shadow:
       1px 1px 2px rgb(0, 0, 0),
       0 0 1em rgb(0, 0, 0),
@@ -156,6 +159,10 @@ header .scrolldown a:hover { color: #11ABB0; }
    position: fixed;
    left: 0;
    top: 0;
+   text-shadow:
+      1px 1px 2px rgb(0, 0, 0),
+      0 0 1em rgb(0, 0, 0),
+      0 0 0.2em rgba(0, 0, 255, 0.47);
 }
 .opaque { background-color: #333; }
 
@@ -214,10 +221,13 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
+   text-shadow:
+      1px 1px 2px rgb(0, 0, 0),
+      0 0 1em rgb(0, 0, 0),
+      0 0 0.2em rgba(0, 0, 255, 0.47);
 }
 
 #about a, #about a:visited  { color: #fff; }

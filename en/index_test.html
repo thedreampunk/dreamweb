@@ -19,6 +19,8 @@
 	<meta property="og:image" content="/img/fbpicture.jpg">
 	<meta property="og:url" content="https://thedreampunk.com">
 	<meta property="og:type" content="website" />
+	<!--- RESPONSIVE TAG -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
    <!-- Mobile Specific Metas
    ================================================== -->
@@ -119,9 +121,31 @@
       </nav> <!-- end #nav-wrap -->
 	  
    <!-- BACKGROUND VIDEO : Cotton Cocoon -->
+	
 	<video autoplay muted loop id="myVideo">
-	<source src="../vid/cotton.mp4" type="video/mp4">
+		<source id="videoSource" src="../vid/cotton.mp4" type="video/mp4">
 	</video>
+
+<script>
+  function isSmartphone() {
+    // User agent check for mobile, but not tablet
+    var ua = navigator.userAgent;
+    var isMobileUA = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua);
+    var isTabletUA = /iPad|Tablet|PlayBook|Silk/i.test(ua);
+    // Screen width check (phones are usually <= 767px)
+    var isPhoneScreen = window.innerWidth <= 767;
+    return isMobileUA && !isTabletUA && isPhoneScreen;
+  }
+  window.addEventListener('DOMContentLoaded', function() {
+    if (isSmartphone()) {
+      var video = document.getElementById('myVideo');
+      var source = document.getElementById('videoSource');
+      source.src = '../vid/cotton_mobile.mp4'; // <-- your vertical video path
+      video.classList.add('mobile-vertical-video'); 
+	  video.load();
+    }
+  });
+</script>
 
 	  <!-- DREAMPORTRAIT -->
 	  <!--  <div class="dreamportrait"><img src="/img/dmpk-mainpage.jpg" width="40%"></img></div> -->
@@ -165,22 +189,14 @@
          </div>
       </div>
 
-		<!-- TODO réparer -->
-<!--
       <p class="scrolldown">
          <a class="smoothscroll" href="#news"><i class="icon-down-circle"></i></a>
       </p>
--->
 
-   </header> <!-- Header End -->
+   </header>
 
     <!-- News Section
    ================================================== -->
-   	<!-- COTTON COCOON VIDEO -->
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/rE-fivUGod4" frameborder="0" 
-		allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		style="border-radius: 10px; overflow: hidden;"
-		></iframe></center>
 
    <section id="news">
    
@@ -217,7 +233,6 @@
 							first release on <b>June 6th</b> on <b><a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank">YouTube</a></b>,<br>
 							then <b>June 11th</b> on <b><a href="https://li.sten.to/dreampunk" target="_blank">other platforms</a></b> !
 							<br><br><br>
-						<br><br><br>
 
 						<!-- MOAR -->	
 							<h3><i class="fa fa-cog"></i> More ? <i class="fa fa-cog"></i></h3> 
@@ -321,27 +336,36 @@
                <div class="twelve columns">
 
 					<h3><i class="fa fa-cog"></i> Music Videos <i class="fa fa-cog"></i></h3>
+					<!-- COTTON COCOON VIDEO -->
 					<p>
-						<b>Hidden Basement</b>: My latest music video, with S.T.X. (12/2019)<br>
-						<b>Cover The World</b>: Each video features a song cover from a different band, played by myself and a musician from a different country. Cover. The World. Challenge accepted!
-						<!--<b>Mini-Live</b> : Short music videos in random places. Original songs + covers.-->
+					<b>Cotton Cocoon</b>: My latest music video, with <b>Stina Simone</b> (01/2025)<br>
 					</p>
-					<center>
-					<!-- MUSIC VIDEO --><iframe  style="display:inline" width="336" height="189" src="https://www.youtube.com/embed/7xiavTXgHsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<!-- CTW --><iframe style="display:inline" width="336" height="189" src="https://www.youtube.com/embed/videoseries?list=PLxtJoLKBQKUkch5hucgKpDliXasFHNuqn" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					<!-- MINI-LIVE --><!--<iframe style="display:inline" width="336" height="189" src="https://www.youtube.com/embed/videoseries?list=PLxtJoLKBQKUn9ZaxECzpuybD4BTcauQIj" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-					</center>	
+					<iframe  style="display:inline" width="336" height="189" 
+					src="https://www.youtube.com/embed/rE-fivUGod4" frameborder="0" allowfullscreen
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+					</iframe>	
 					<br/>
+					<!-- SHOUT VIDEO -->
+					<p>
+					<b>Shout</b>: My latest song, with <b>Amandine</b> (06/2025)<br>
+					</p>
+					<iframe  style="display:inline" width="336" height="189" 
+					src="https://www.youtube.com/embed/B1h7ualhvAA" frameborder="0" allowfullscreen
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+					</iframe>	
+					<br/>
+
+					<!-- TARTE VIDEO -->
 					<h3><i class="fa fa-cog"></i> Random Videos <i class="fa fa-cog"></i></h3>
 					<p>
-						<b>Bonus</b> : Random videos about pretty much anything I want to experiment.<br/>
-						<b>Blabla</b> : Miscellaneous talks about my projects, travel experiences and life reflections.
+						<b>Interview</b> : Parody video interview of the French-German channel ARTE
 					</p>
-					<center>
-						<!-- BONUS --><iframe style="display:inline" width="336" height="189" src="https://www.youtube.com/embed/videoseries?list=PLxtJoLKBQKUnkGqqF32156hjG-zbjldQJ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						<!-- BLABLA --><iframe style="display:inline" width="336" height="189" src="https://www.youtube.com/embed/videoseries?list=PLxtJoLKBQKUkSkI5S2TgYlr-eOGr63HXx" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</center>
+					<iframe  style="display:inline" width="336" height="189" 
+					src="https://www.youtube.com/embed/LjOmA-j9YkE" frameborder="0" allowfullscreen
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+					</iframe>	
 					<br/>
+
 					<h3><i class="fa fa-cog"></i> More ? <i class="fa fa-cog"></i></h3>
 					<div class="g-ytsubscribe" data-channel="SpeXYourself" data-layout="full" data-theme="dark" data-count="default"></div>
                </div>
@@ -442,9 +466,7 @@
 						<b>Pok&eacute;mon Go VS Dreampunk</b> is a video game I created with <a href="https://scratch.mit.edu/" target="_blank">Scratch.</a><br/>
 						<a href="/letsplay.html" target="_blank" ><img src="/img/pkgo-vs-dreampunk.png" width="60%"></img></a><br/>		
 					</p>
-					
-					<h3><i class="fa fa-cog"></i> More ? <i class="fa fa-cog"></i></h3>
-					<p>Soon...</p>
+
                </div>
 
             </div> <!-- item end -->
@@ -482,9 +504,9 @@
 
    </section> <!-- About Section End-->
 
-   <!-- Contact Section
+   <!-- Contact Section DEAD
    ================================================== -->
-  <section id="contact">
+  <!-- <section id="contact">
 
          <div class="row section-head">
 
@@ -493,86 +515,21 @@
                <h1><span>Get In Touch</span></h1>
 
             </div>
-
-<!--
-            <div class="ten columns">
-
-                  <p class="lead" style="color:#fff;">Say something ?</p>
-
--->
             </div>
 
          </div>
 		 
-		 <!-- FACEBOOK COMMENTS -->
 		 <center>
-<!--<div class="fb-comments" data-href="/" data-numposts="5" data-colorscheme="dark"></div>-->
 
 
 <br/>
-<!-- FACEBOOK BANNER -->
-<!--
-<div class="fb-page" 
-  data-href="https://www.facebook.com/thedreampunk"
-  data-width="380" 
-  data-hide-cover="false"
-  data-show-facepile="false"
-  data-colorscheme="light"
-  style="filter:alpha(opacity=1); opacity:1;"></div>
-  <br/><br/>
---> 
+
   <h2 style="color:#fff;"><i class="fa fa-envelope"></i> : me@thedreampunk.com</h2>
 
   </center>
-         <!--<div class="row">
-
-            <div class="eight columns">
-               //Form
-               <form action="/sendEmail.php" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit" type="submit">Submit</button>
-					 <input class="submit" type="submit">
-                     <span id="image-loader">
-                        <img alt="" src="img/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form>
-				   
-               <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-      </div>-->
-
-   </section> <!-- Contact Section End-->
-
+        
+   </section>
+-->
    <!-- footer
    ================================================== -->
    <footer>
@@ -581,19 +538,21 @@
 
          <div class="twelve columns">
 
-            <ul class="social-links">
-               <li><a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target = "_blank"><i class="fa fa-spotify"></i></a></li>
-			   <li><a href="https://www.deezer.com/en/artist/15365325" target = "_blank"><i class="fa fa-bar-chart"></i></a></li>
-			   <li><a href="https://www.youtube.com/c/dreampunk" target = "_blank"><i class="fa fa-youtube"></i></a></li>
-			   <li><a href="https://itunes.apple.com/us/artist/dreampunk/1412604665" target = "_blank"><i class="fa fa-apple"></i></a></li>
-			   <li><a href="https://soundcloud.com/thedreampunk" target = "_blank"><i class="fa fa-soundcloud"></i></a></li>
+			<ul class="social-links">
+			   <li>
+				<a href="https://www.youtube.com/c/dreampunk" target = "_blank"><i class="fa fa-youtube"></i></a>
+				<a href="https://www.instagram.com/thedreampunk/" target = "_blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target = "_blank"><i class="fa fa-spotify"></i></a>
+			   	<a href="https://www.deezer.com/en/artist/15365325" target = "_blank"><i class="fa fa-bar-chart"></i></a>
+			   	<a href="https://itunes.apple.com/us/artist/dreampunk/1412604665" target = "_blank"><i class="fa fa-apple"></i></a>
+			   	<a href="https://soundcloud.com/thedreampunk" target = "_blank"><i class="fa fa-soundcloud"></i></a></li>			
             </ul>
 			
 			<!-- LICENCE RIGHTS -->
 			<br/>
            <ul class="copyright">
-				<li>Original web template by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> &copy; Copyright 2014 CeeVee</li><br/>
-				<li>Website twist and all content : &copy; Copyright Dreampunk 2022 - Some Rights Reserved</li><br/>
+				<li>Original web template by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> &copy; Copyright CeeVee</li><br/>
+				<li>Webdev : &copy; Copyright Dreampunk 2026 - Some Rights Reserved</li><br/>
             </ul>
 			<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="/img/licence_creative_commons.png" alt="Licence Creative Commons"/></a><br/>
 
