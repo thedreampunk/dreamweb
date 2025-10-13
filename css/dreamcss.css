@@ -31,10 +31,18 @@ body {
 h1 {
 	font-family:'FARRAY-Regular';
 	color:#ffe6cc;
+  text-shadow:
+      1px 1px 2px rgb(0, 0, 0),
+      0 0 1em rgb(0, 0, 0),
+      0 0 0.2em rgba(0, 0, 255, 0.47);
 }
 
 h2 {
 	font-family:'FARRAY-Regular';
+  text-shadow:
+      1px 1px 2px rgb(0, 0, 0),
+      0 0 1em rgb(0, 0, 0),
+      0 0 0.2em rgba(0, 0, 255, 0.47);
 }
 
 h3 {

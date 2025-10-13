@@ -9,10 +9,15 @@ function isSmartphone() {
 }
 window.addEventListener('DOMContentLoaded', function () {
     if (isSmartphone()) {
+        // Background video portrait
         var video = document.getElementById('myVideo');
         var source = document.getElementById('videoSource');
         source.src = '../vid/cotton_mobile.mp4'; // <-- your vertical video path
         video.classList.add('mobile-vertical-video');
         video.load();
+        
+        // Masquer section pokémon go aka MISC section
+        //var otherSection = document.getElementById('other')
+        //otherSection.style.display = "none";
     }
 });
