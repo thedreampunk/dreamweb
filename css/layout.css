@@ -41,8 +41,7 @@ div {z-index: 100;}
 
 header {
    position: relative;
-   height: 800px;
-   min-height: 500px;
+
    width: 100%;
    /*background: #000000;*/ 
    /*url(../img/header-background.jpg) no-repeat top center;*/
@@ -50,6 +49,7 @@ header {
 	/*-webkit-background-size: cover !important;*/
    text-align: center;
    overflow: hidden;
+   display:inline-block;
 }
 
 /* vertically center banner section */
@@ -150,7 +150,7 @@ header .scrolldown a:hover { color: #11ABB0; }
    text-transform: uppercase;
    letter-spacing: 2px;
    margin: 0 auto;
-   z-index: 301;
+   z-index: 299;
    position: fixed;
    left: 0;
    top: 0;
@@ -247,7 +247,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about p {
    line-height: 30px;
-   color: ##e6e6e6;
+   color: #e6e6e6;
 }
 #about .profile-pic {
    position: relative;
@@ -1038,3 +1038,6 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+#footer-widgets a, img {
+  border-radius:12px;
+}
