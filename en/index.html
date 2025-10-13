@@ -37,13 +37,17 @@
 	<link rel="stylesheet" href="/css/dreamcss.css">
 
 	<!-- Javascript
-   ================================================== -->
-   	<script defer src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   	================================================== -->
+   	<!-- jQuery is loaded before other js files -->
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/js/jquery.flexslider.js"></script>
+	<!-- If jQuery fails to load, load local copy -->
+	<script>window.jQuery || document.write('<script src="https://thedreampunk.com/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<!-- Other JS files -->
 	<script defer src="/js/dreamquery.js"></script>
 	<script defer src="/js/modernizr.js"></script>
 	<script defer src="https://apis.google.com/js/platform.js"></script>
-	<script defer src="/js/jquery-migrate-1.2.1.min.js"></script>
-	<script defer src="/js/jquery.flexslider.js"></script>
 	<script defer src="/js/waypoints.js"></script>
 	<script defer src="/js/jquery.fittext.js"></script>
 	<script defer src="/js/magnific-popup.js"></script>
