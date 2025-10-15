@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<title>Le Dreamweb</title>
+
+	<!--- Metadata
+	================================================== -->
+	<meta charset="utf-8">
+	<meta name="title" content="Dreampunk : Le Dreamweb">
+	<meta name="description" content="Site officiel de Dreampunk : Musique, Vid&eacute;os et d'autres trucs">
+	<meta name="author" content="Axel Bourdet">
+	<meta name="keywords" content="dreampunk, site, officiel, spex, spex yourself, musique, musicien, artiste, steampunk, indie, indie music, indie pop">
+
+	<!-- Mobile Specific Metadata
+   	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Colored header -->
+	<meta name="theme-color" content="#000000">
+
+	<!--- Opengraph Metadata (Facebook, Twitter)
+    ================================================== -->
+	<meta property="og:title" content="Le Dreamweb">
+	<meta property="og:description" content="Site officiel de Dreampunk : Musique, Vid&eacute;os et d'autres trucs">
+	<meta property="og:image" content="/img/fbpicture.jpg">
+	<meta property="og:url" content="https://thedreampunk.com">
+	<meta property="og:type" content="website" /> 
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="/css/default.css">
+	<link rel="stylesheet" href="/css/layout.css">
+	<link rel="stylesheet" href="/css/media-queries.css">
+	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<link rel="stylesheet" href="/css/dreamcss.css">
+
+	<!-- Javascript
+   	================================================== -->
+   	<!-- jQuery is loaded before other js files -->
+   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/js/jquery.flexslider.js"></script>
+	<!-- If jQuery fails to load, load local copy -->
+	<script>window.jQuery || document.write('<script src="https://thedreampunk.com/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<!-- Other JS files -->
+	<script defer src="/js/dreamquery.js"></script>
+	<script defer src="/js/modernizr.js"></script>
+	<script defer src="https://apis.google.com/js/platform.js"></script>
+	<script defer src="/js/waypoints.js"></script>
+	<script defer src="/js/jquery.fittext.js"></script>
+	<script defer src="/js/magnific-popup.js"></script>
+	<script defer src="/js/init.js"></script>
+	<script defer src="/js/dreamjs.js"></script>
+	
+
+	<!-- Google Analytics
+   	================================================== -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-79553051-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- Favicon
+   	================================================== -->
+	<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+	<!-- Background Video : Cotton Cocoon
+	================================================== -->
+	<video autoplay muted loop id="myVideo">
+		<source id="videoSource" src="../vid/cotton.mp4" type="video/mp4">
+	</video>
+
+	<!-- Header
+   	================================================== -->
+	<header id="home">
+
+		<!-- Nav Bar
+   		================================================== -->
+		<nav id="nav-wrap">
+			<!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+			<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
+			<!-- tmp comment 202205 <ul id="nav" class="nav"> -->
+			<li class="current">
+				<a class="smoothscroll" href="#home">Accueil</a>-
+				<a class="smoothscroll" href="#news">News</a>-
+				<a class="smoothscroll" href="#music">Musique</a>-
+				<a class="smoothscroll" href="#videos">Vid&eacute;os</a>-
+				<a class="smoothscroll" href="#shop">Boutique</a>-
+				<!-- <a class="smoothscroll" href="#other"> Divers</a> - -->
+				<a class="smoothscroll" href="#about">à propos</a>-
+				<!-- <a class="smoothscroll" href="#contact"> Contact </a> - -->
+				<a class="smoothscroll" href="/en/"><img src="../img/en.png" width="30" /></a>
+			</li>
+		</nav>
+
+		<!-- DREAMPORTRAIT -->
+		<!--  <div class="dreamportrait"><img src="/img/dmpk-mainpage.jpg" width="40%"></img></div> -->
+		
+		<div class="row banner">
+			<div class="banner-text">
+
+				<br>
+				<!-- Logo Dreampunk -->
+				<img src="/img/dreampunk_logo_white_transparent.png" width="70%"></img>
+			<!-- DESCRIPTION -->
+			<h3>Je suis un <span>artiste</span> parisien basé à Nantes.<br>
+			Pendant un temps, j'ai v&eacute;cu &agrave; Melbourne (Australie), puis &agrave; Londres.<br/>
+			Je fais de la <a class="smoothscroll" href="#music">musique</a>, des <a class="smoothscroll" href="#videos">vid&eacute;os</a>, et un d'autres exp&eacute;riences cr&eacute;atives.</a><br/>
+			J'aime l'art sous toutes ses formes, la nature, les gens bienveillants et passionnés...<br/>
+			Eh, et si tu jetais un oeil un peu plus bas ?
+			<hr />
+
+
+				<!-- EMBEDDED SPOTIFY -->
+				<iframe style="border-radius:12px"
+					src="https://open.spotify.com/embed/artist/7rAqV3xGSrUmJqSNioQfTh?utm_source=generator&theme=0"
+					width="50%" height="152" frameBorder="0" allowfullscreen=""
+					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+					loading="lazy"></iframe>
+
+				<!-- Social Links -->
+				<ul class="social">
+					<!-- icones dans css\font-awesome\css\font-awesome.css -->
+					<li>
+						<a href="https://www.youtube.com/c/dreampunk" target="_blank"><i
+								class="fa fa-youtube"></i></a>
+						<a href="https://www.instagram.com/thedreampunk/" target="_blank"><i
+								class="fa fa-instagram"></i></a>
+						<a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target="_blank"><i
+								class="fa fa-spotify"></i></a>
+						<a href="https://www.deezer.com/en/artist/15365325" target="_blank"><i
+								class="fa fa-bar-chart"></i></a>
+						<a href="https://itunes.apple.com/us/artist/dreampunk/1412604665" target="_blank"><i
+								class="fa fa-apple"></i></a>
+						<a href="https://soundcloud.com/thedreampunk" target="_blank"><i
+								class="fa fa-soundcloud"></i></a>
+					</li>
+					<!-- <li><a href="https://www.tiktok.com/@thedreampunk" target = "_blank"><i class="fa fa-sou"><img src="/img/tiktok.png" width="10%"></img></i></a></li>	   -->
+				</ul>
+			</div>
+		</div>
+
+		<!-- Down Arrow to the News section -->
+		<p class="scrolldown">
+			<a class="smoothscroll" href="#news"><i class="icon-down-circle"></i></a>
+		</p>
+
+	</header>
+
+	<!-- News Section
+   ================================================== -->
+
+	<section id="news">
+
+		<div class="row education">
+			<br><br>
+			<div class="three columns header-col">
+				<h1><span>NEWS</span></h1>
+			</div>
+
+			<div class="nine columns main-col">
+
+				<div class="row item">
+
+					<div class="twelve columns">
+						<h3><i class="fa fa-cog"></i> 2025 <i class="fa fa-cog"></i></h3>
+						<!-- SEPTEMBRE -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=dg6kQvAnCqM" target="_blank" >							
+								<img src="/img/news/202509-hello.jpg" style="border-radius:12px"></img></a>
+							</aside>
+							<b>SEPTEMBRE</b><br/>
+							- De retour des vacances d'&eacute;t&eacute; et du concert <br>
+							d'<b>Oasis</b> &agrave; <b>Wembley</b> ! Voici donc une petite reprise, <br>
+							mon humble version de <b><a href="https://www.youtube.com/watch?v=dg6kQvAnCqM" target="_blank">Hello, par Oasis</a></b>
+							<br><br><br>
+						<!-- JUIN -->
+						<aside class="three columns footer-widgets">						
+							<a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank" >							
+								<img src="/img/news/202506-shout.jpg" style="border-radius:12px"></img></a>
+							</aside>
+							<b>JUIN</b><br/>
+							- Nouveau morceau : <b>"Shout !"</b> avec <b>Amandine</a></b>,<br>
+							Sortie initiale le <b>6 Juin 19h</b> sur <b><a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank">YouTube</a></b>,<br>
+							puis <b>le 11 Juin</b> sur <b><a href="https://li.sten.to/dreampunk" target="_blank">toutes les plateformes</a></b> !
+							<br><br><br>										
+						<!-- PLUS -->	
+							<h3><i class="fa fa-cog"></i> Encore ? <i class="fa fa-cog"></i></h3> 
+							<p><a href="/fr/news.html">
+								Plus de news !
+							</a></p>
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- Music Section
+   ================================================== -->
+	<section id="music">
+
+		<!-- Soundcloud Player
+      ----------------------------------------------- -->
+		<div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>MUSIQUE</span></h1>
+         </div>
+
+			<div class="nine columns main-col">
+
+				<div class="row item">
+
+					<div class="twelve columns">
+						<!-- <h3><i class="fa fa-cog"></i> La Boutique <i class="fa fa-cog"></i></h3>
+						LINK SHOP
+						<a href="/fr/shop.html" target="_blank"><img src="/img/shop.png" style="border-radius:12px" alt="Commander Album"
+								width="300" /></a>
+						<br><br>
+ 						-->
+						<h3><i class="fa fa-cog"></i> Les DreamRadios <i class="fa fa-cog"></i></h3>
+						<p class="info">Ceci est la <a id ="activeRadioName">ROCK RADIO </a><br/>
+				  		Sens-toi libre de changer : 
+							<a class="dreamradioButton" id="rock" hidden="yes">ROCK RADIO </a> -
+							<a class="dreamradioButton" id="happy">HAPPY RADIO </a> -
+							<a class="dreamradioButton" id="zen">ZEN RADIO </a> -
+							<a class="dreamradioButton" id="trippy">TRIPPY RADIO </a>
+						</p>
+
+						<!-- MUSIC RADIO PLAYERS -->
+						<iframe class="rock" id="playerRock" width="100%" height="450" scrolling="no" frameborder="no" style="border-radius:12px"
+							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323025388&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
+						</iframe>
+						<iframe class="happy" id="playerHappy" width="100%" height="450" scrolling="no" frameborder="no" style="border-radius:12px"
+							hidden="yes"
+							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/319754430&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
+						</iframe>
+						<iframe class="zen" id="playerZen" width="100%" height="450" scrolling="no" frameborder="no" style="border-radius:12px"
+							hidden="yes"
+							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323029686&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
+						</iframe>
+						<iframe class="trippy" id="playerTrippy" width="100%" height="450" scrolling="no" style="border-radius:12px"
+							frameborder="no" hidden="yes"
+							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323029994&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
+						</iframe>
+						<br><br>
+
+						<h3><i class="fa fa-cog"></i> Plus ? <i class="fa fa-cog"></i></h3>
+						<h1>
+							<ul class="social">
+								<li>
+									<a href="https://www.youtube.com/c/dreampunk" target="_blank"><i
+											class="fa fa-youtube"></i></a>
+									<a href="https://www.instagram.com/thedreampunk/" target="_blank"><i
+											class="fa fa-instagram"></i></a>
+									<a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target="_blank"><i
+											class="fa fa-spotify"></i></a>
+									<a href="https://www.deezer.com/en/artist/15365325" target="_blank"><i
+											class="fa fa-bar-chart"></i></a>
+									<a href="https://itunes.apple.com/us/artist/dreampunk/1412604665" target="_blank"><i
+											class="fa fa-apple"></i></a>
+									<a href="https://soundcloud.com/thedreampunk" target="_blank"><i
+											class="fa fa-soundcloud"></i></a>
+								</li>
+							</ul>
+						</h1>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- Videos Section
+      ----------------------------------------------- -->
+
+	<section id="videos">
+		<div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Vid&eacute;os</span></h1>
+         </div>
+
+			<div class="nine columns main-col">
+
+				<div class="row item">
+
+					<div class="twelve columns">
+
+						<h3><i class="fa fa-cog"></i> Vid&eacute;os musicales <i class="fa fa-cog"></i></h3>
+						<!-- COTTON COCOON VIDEO -->
+						<p>
+							<b>Cotton Cocoon</b>: Mon dernier clip, avec <b>Stina Simone</b> (01/2025)<br>
+						</p>
+						<iframe style="display:inline; border-radius:12px" width="336" height="189"
+							src="https://www.youtube.com/embed/rE-fivUGod4" frameborder="0" allowfullscreen
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+						</iframe>
+						<br>
+						<!-- SHOUT VIDEO -->
+						<p>
+							<b>Shout</b>: Mon dernier morceau, avec <b>Amandine</b> (06/2025)<br>
+						</p>
+						<iframe style="display:inline; border-radius:12px" width="336" height="189"
+							src="https://www.youtube.com/embed/B1h7ualhvAA" frameborder="0" allowfullscreen
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+						</iframe>
+						<br>
+
+						<!-- TARTE VIDEO -->
+						<h3><i class="fa fa-cog"></i> Vid&eacute;os Random <i class="fa fa-cog"></i></h3>
+						<p>
+							<b>Interview</b> : Parodie de documentaire ARTE
+						</p>
+						<iframe style="display:inline; border-radius:12px" width="336" height="189"
+							src="https://www.youtube.com/embed/LjOmA-j9YkE" frameborder="0" allowfullscreen
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+						</iframe>
+						<br>
+
+						<h3><i class="fa fa-cog"></i> Plus ? <i class="fa fa-cog"></i></h3>
+						<div class="g-ytsubscribe" data-channel="SpeXYourself" data-layout="full" data-theme="dark"
+							data-count="default"></div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+
+	</section>
+
+<!--
+
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>T&eacute;moignages</span></h1>
+
+            </div>
+			<br><br><br><br>
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Oubliez le combo "Avocat + Vegemite". Le nouveau truc, c'est "Dreampunk + Vegemite".
+                           </p>
+                           <cite>H. Jackman</cite>
+                        </blockquote>
+                     </li>
+					 
+					<li>
+                       <blockquote>
+                           <p> Dreampunk ? Si vous pouviez lui dire de me rendre mon parapluie un de ces quatre...
+                           </p>
+                           <cite>Rihanna</cite>
+                        </blockquote>
+                     </li>
+					 
+					 <li>
+                       <blockquote>
+                           <p>Mec, J'adorerais bosser avec ce type si j'&eacute;tais toujours dans les parages...
+                           </p>
+                           <cite>M. Jackson</cite>
+                        </blockquote>
+                     </li>
+
+                     <li>
+                       <blockquote>
+                           <p>Je crois que je peux dire tout &agrave; fait objectivement que Dreampunk est le meilleur artiste de tous les temps !
+                           </p>
+                           <cite>Maman</cite>
+                        </blockquote>
+                     </li>
+
+                  </ul>
+
+               </div>
+
+            </div>
+
+         </div>
+
+       </div>  
+
+   </section>
+
+	<br>
+	<section id="other">
+		<div class="row work">
+
+			<div class="three columns header-col">
+				<h1><span>Divers</span></h1>
+			</div>
+
+			<div class="nine columns main-col">
+
+				<div class="row item">
+
+					<div class="twelve columns">
+					
+					<h3><i class="fa fa-cog"></i> Le Dreamblog <i class="fa fa-cog"></i></h3>
+					<p>
+						Des articles - ok 3 articles - en français (oui madame !) sur mes aventures australiennes : <a href="http://dreampunkinoz.blogspot.com/" target="_blank">Le Dreamblog</a><br/>
+						<a href="http://dreampunkinoz.blogspot.com/" target="_blank" ><img src="/img/blog.jpg" width="60%"></img></a><br/>		
+					</p>
+					
+					<h3><i class="fa fa-cog"></i> Pok&eacute;mon Go VS Dreampunk <i class="fa fa-cog"></i></h3>
+					<p>
+						<b>Pok&eacute;mon Go VS Dreampunk</b> est un jeu vid&eacute;o que j'ai cr&eacute;&eacute; sur <a href="https://scratch.mit.edu/" target="_blank">Scratch.</a><br/>
+						<a href="/letsplay.html" target="_blank" ><img src="/img/pkgo-vs-dreampunk.png" width="60%"></img></a><br/>		
+					</p>
+					
+					<h3><i class="fa fa-cog"></i> Plus ? <i class="fa fa-cog"></i></h3>
+					<p>Patience...</p>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+-->
+	<!-- Shop Section
+   ================================================== -->
+	<section id="shop">
+		<div class="row products">
+			<br/><br/>
+			<div class="three columns header-col">
+				<h1><span>Boutique</span></h1>
+			</div>
+		 
+			<div class="nine columns main-col">
+
+				<div class="row item">
+			
+					<div class="twelve columns">
+						<h3><i class="fa fa-cog"></i> CD + WAV/MP3 <i class="fa fa-cog"></i></h3>
+						<!-- COMBO CD-->
+							<aside class="four columns footer-widgets">
+							<a href="https://dreampunk.gumroad.com/l/combo-cd-en" target="_blank" >							
+								<img src="/img/shop/combo-cd.png" style="border-radius:12px; margin:10px"></img>
+							</a>
+							</aside>
+						<!-- OPA CD-->
+							<aside class="four columns footer-widgets">
+							<a href="https://dreampunk.gumroad.com/l/opa-cd-en" target="_blank" >							
+								<img src="/img/shop/opa-cd.png" style="border-radius:12px; margin:10px"></img>
+							</a>
+							</aside>
+						<!-- FOS CD-->
+							<aside class="four columns footer-widgets">
+							<a href="https://dreampunk.gumroad.com/l/fos-cd-en" target="_blank" >							
+								<img src="/img/shop/fos-cd.png" style="border-radius:12px; margin:10px"></img>
+							</a>
+							</aside>
+						<h3><i class="fa fa-cog"></i> WAV/MP3 <i class="fa fa-cog"></i></h3>
+						<!-- OPA MP3 -->
+							<aside class="four columns footer-widgets">
+							<a href="https://dreampunk.gumroad.com/l/opa-mp3-en" target="_blank" >							
+								<img src="/img/shop/opa-mp3.png" style="border-radius:12px; margin:10px"></img>
+							</a>
+							</aside>
+						<!-- FOS MP3 -->
+							<aside class="four columns footer-widgets">
+							<a href="https://dreampunk.gumroad.com/l/fos-mp3-en" target="_blank" >							
+								<img src="/img/shop/fos-mp3.png" style="border-radius:12px; margin:10px"></img>
+							</a>
+							</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- About Section
+   ================================================== -->
+	<section id="about">
+
+		<div class="row">
+
+			<div class="three columns">
+
+				<img class="profile-pic" src="/img/profilepic.jpg" alt="" />
+
+			</div>
+
+			<div class="nine columns main-col">
+
+				<h2><i class="fa fa-cog"></i> A propos</h2>
+
+
+	            <p>J'aime cette id&eacute;e d'&ecirc;tre 100% libre avec mon projet.<br/>
+				J'ai fait ce choix de le garder en tant que passion, plut&ocirc;t que d'en d&eacute;pendre pour vivre.<br/>
+				Pour moi, c'&eacute;tait le choix le plus sain, qui me permettait de l'aborder de la façon la plus sinc&egrave;re.<br/>
+				Explorer de nouveaux terrains artistiques selon les envies, ou jouer avec de nouveaux styles musicaux : 
+				Si je veux faire, disons du reggae... je peux ! (je dis pas que ça sonnera bien...)<br/>
+	            </p>
+
+
+			</div>
+
+		</div>
+
+	</section>
+
+<!-- Contact Section DEAD
+   ================================================== -->
+	<!-- <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch</span></h1>
+
+            </div>
+            </div>
+
+         </div>
+		 
+		 <center>
+
+
+<br>
+
+  <h2 style="color:#fff;"><i class="fa fa-envelope"></i> : me@thedreampunk.com</h2>
+
+  </center>
+        
+   </section>
+-->
+	<!-- footer
+   ================================================== -->
+	<footer>
+
+		<div class="row">
+
+			<div class="twelve columns">
+
+				<ul class="social-links">
+					<li>
+						<a href="https://www.youtube.com/c/dreampunk" target="_blank"><i class="fa fa-youtube"></i></a>
+						<a href="https://www.instagram.com/thedreampunk/" target="_blank"><i
+								class="fa fa-instagram"></i></a>
+						<a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target="_blank"><i
+								class="fa fa-spotify"></i></a>
+						<a href="https://www.deezer.com/en/artist/15365325" target="_blank"><i
+								class="fa fa-bar-chart"></i></a>
+						<a href="https://itunes.apple.com/us/artist/dreampunk/1412604665" target="_blank"><i
+								class="fa fa-apple"></i></a>
+						<a href="https://soundcloud.com/thedreampunk" target="_blank"><i
+								class="fa fa-soundcloud"></i></a>
+					</li>
+				</ul>
+
+				<!-- LICENCE RIGHTS -->
+				<br>
+				<ul class="copyright">
+					<li>Original web template by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>
+						&copy; Copyright CeeVee</li><br>
+					<li>Webdev : &copy; Copyright Dreampunk 2026 - Some Rights Reserved</li><br>
+				</ul>
+				<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img
+						src="/img/licence_creative_commons.png" alt="Licence Creative Commons" /></a><br>
+
+			</div>
+
+			<div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
+			</div>
+
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
