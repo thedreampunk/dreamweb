@@ -4,13 +4,22 @@
 <!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-   <!--- Metadata
-   ================================================== -->
-	<meta charset="utf-8">
 	<title>Le Dreamweb - News</title>
+
+	<!--- Metadata
+	================================================== -->
+	<meta charset="utf-8">
+	<meta name="title" content="Dreampunk : Le Dreamweb - News">
 	<meta name="description" content="Dreampunk's Official Website : Music, Videos and Other Stuff">
 	<meta name="author" content="Axel Bourdet">
-	<meta name="keywords" content="dreampunk, official, website, spex, spex yourself, music, musician, artist, steampunk, indie, indie music, indie pop">
+	<meta name="keywords"
+		content="dreampunk, official, website, spex, spex yourself, music, musician, artist, steampunk, indie, indie music, indie pop">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Colored header -->
+	<meta name="theme-color" content="#000000">
 
    <!--- Opengraph Metadata (Facebook, Twitter)
     ================================================== -->
@@ -20,11 +29,6 @@
 	<meta property="og:url" content="https://thedreampunk.com">
 	<meta property="og:type" content="website" />
 	
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Colored header -->
-	<meta name="theme-color" content="#000000">
 
 	<!-- CSS
     ================================================== -->
@@ -47,7 +51,10 @@
 	<script src="/js/magnific-popup.js"></script>
 	<script src="/js/init.js"></script>
 	<script src="/js/dreamquery.js"></script>
-	<!-- GOOGLE ANALYTICS -->
+	<script src="/js/dreamjs.js"></script>
+
+	<!-- Google Analytics
+   	================================================== -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -58,7 +65,8 @@
 		ga('send', 'pageview');
 	</script>
 
-	<!-- FAVICON -->
+	<!-- Favicon
+   	================================================== -->
 	<link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -82,38 +90,45 @@
 
 <body>
 
-<!-- Facebook comments SCRIPT-->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=1945872815702221&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-   <!-- NO Header
+   <!-- Header
    ================================================== -->
+	<header id="home">
+      <!-- <nav id="nav-wrap">
 
-      <nav id="nav-wrap">
-<!-- 
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	     <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
--->
-         <ul id="nav" class="nav">
-            <li><a class="smoothscroll" href="/fr/">Accueil</a></li>
-			<li class="current"><a class="smoothscroll" href="/fr/news.html">News</a></li>
-	        <li><a class="smoothscroll" href="/fr/#music">Musique</a></li>
-            <li><a class="smoothscroll" href="/fr/#videos">Vid&eacute;os</a></li>
-			<li><a class="smoothscroll" href="/fr/shop.html">Boutique</a></li>
-            <li><a class="smoothscroll" href="/fr/#other">Divers</a></li>
-			<li><a class="smoothscroll" href="/fr/#about">à propos</a></li>
-			<li><a class="smoothscroll" href="/fr/#contact">Contact</a></li>
-			<li><a class="smoothscroll" href="/en/news.html"><img src="../img/en.png" width = "30"/></a></li>
-         </ul> <!-- end #nav -->
 
-      </nav> <!-- end #nav-wrap -->
+		 <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="/en/">Home</a></li>
+			<li class="current"><a class="smoothscroll" href="/en/news.html">News</a></li>
+	        <li><a class="smoothscroll" href="/en/#music">Music</a></li>
+            <li><a class="smoothscroll" href="/en/#videos">Videos</a></li>
+			<li><a class="smoothscroll" href="/en/#shop">Shop</a></li>
+            <li><a class="smoothscroll" href="/en/#other">Misc</a></li>
+			<li><a class="smoothscroll" href="/en/#about">About</a></li>
+			<li><a class="smoothscroll" href="/en/#contact">Contact</a></li>
+			<li><a class="smoothscroll" href="/fr/news.html"><img src="../img/fr.png" width = "30"/></a></li>
+         </ul>
 
+      </nav>-->
+
+		<nav id="nav-wrap">
+			<!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+			<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
+			<li class="current">
+				<a class="notsmoothscroll" href="index.html#home">Accueil</a>-
+				<a class="notsmoothscroll" href="/en/news.html">News</a>-
+				<a class="notsmoothscroll" href="index.html#music">Musique</a>-
+				<a class="notsmoothscroll" href="index.html#videos">Vid&eacute;os</a>-
+				<a class="notsmoothscroll" href="index.html#shop">Boutique</a>-
+				<!-- <a class="notsmoothscroll" href="#other"> Misc</a> - -->
+				<a class="notsmoothscroll" href="index.html#about">&agrave; propos</a>-
+				<!-- <a class="notsmoothscroll" href="#contact"> Contact </a> - -->
+				<a class="notsmoothscroll" href="/en/news.html"><img src="../img/en.png" width="30" /></a>
+			</li>
+		</nav>
+
+ 	</header>
     <!-- News Section
    ================================================== -->
    <section id="news">
@@ -128,7 +143,7 @@
 
 				<div class="row item">
 			
-					<div class="twelve columns">
+					<div class="twelve columns roundborders">
 						
 						<!-- 2025 -->	
 						<h3><i class="fa fa-cog"></i> 2025 <i class="fa fa-cog"></i></h3>
