@@ -64,6 +64,10 @@ a {
 	cursor: pointer;
 }
 
+.playlist {
+  font-family:'FARRAY-Regular';
+}
+
 /* ------------------------------------------------------------------
 /* c. Hide all until page is loaded (display bugs)
 /* ------------------------------------------------------------------ */

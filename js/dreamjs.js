@@ -1,3 +1,4 @@
+// Custom display for mobile devices
 function isSmartphone() {
     // User agent check for mobile, but not tablet
     var ua = navigator.userAgent;
@@ -21,3 +22,20 @@ window.addEventListener('DOMContentLoaded', function () {
         //otherSection.style.display = "none";
     }
 });
+
+// Spotify JS functions
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  const element = document.getElementById('embed-iframe');
+  const options = {
+      uri: 'spotify:playlist:1mYXYlRBQvypHTXz7alA7C'
+    };
+    const callback = (EmbedController) => {
+    document.querySelectorAll('.playlist').forEach(
+        playlist => {
+        playlist.addEventListener('click', () => {
+            EmbedController.loadUri(playlist.dataset.spotifyId)
+            });
+        })
+    };
+  IFrameAPI.createController(element, options, callback);
+}
