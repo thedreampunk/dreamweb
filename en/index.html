@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="/css/layout.css">
 	<link rel="stylesheet" href="/css/media-queries.css">
 	<link rel="stylesheet" href="/css/magnific-popup.css">
+	<!-- Custom Dreampunk CSS -->
 	<link rel="stylesheet" href="/css/dreamcss.css">
 
 	<!-- Javascript
@@ -45,13 +46,15 @@
 	<!-- If jQuery fails to load, load local copy -->
 	<script>window.jQuery || document.write('<script src="https://thedreampunk.com/js/jquery-1.10.2.min.js"><\/script>')</script>
 	<!-- Other JS files -->
-	<script defer src="/js/dreamquery.js"></script>
 	<script defer src="/js/modernizr.js"></script>
 	<script defer src="https://apis.google.com/js/platform.js"></script>
 	<script defer src="/js/waypoints.js"></script>
 	<script defer src="/js/jquery.fittext.js"></script>
 	<script defer src="/js/magnific-popup.js"></script>
 	<script defer src="/js/init.js"></script>
+	<script async src="https://open.spotify.com/embed/iframe-api/v1"></script>
+	<!-- Custom Dreampunk Jquery and JS -->
+	<script defer src="/js/dreamquery.js"></script>
 	<script defer src="/js/dreamjs.js"></script>
 	
 
@@ -126,9 +129,9 @@
 					Maybe you'd like to scroll down now ? Come on. Don't be shy.
 					<hr />
 
-				<!-- EMBEDDED SPOTIFY -->
+				<!-- EMBEDDED SPOTIFY ARTIST -->
 				<iframe style="border-radius:12px"
-					src="https://open.spotify.com/embed/artist/7rAqV3xGSrUmJqSNioQfTh?utm_source=generator&theme=0"
+					src="https://open.spotify.com/embed/artist/7rAqV3xGSrUmJqSNioQfTh?utm_source=generator"
 					width="50%" height="152" frameBorder="0" allowfullscreen=""
 					allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 					loading="lazy"></iframe>
@@ -223,9 +226,6 @@
 	<!-- Music Section
    ================================================== -->
 	<section id="music">
-
-		<!-- Soundcloud Player
-      ----------------------------------------------- -->
 		<div class="row education">
 
 			<div class="three columns header-col">
@@ -237,37 +237,35 @@
 				<div class="row item">
 
 					<div class="twelve columns">
-						<!-- <h3><i class="fa fa-cog"></i> La Shop <i class="fa fa-cog"></i></h3>
-						LINK SHOP
-						<a href="/en/shop.html" target="_blank"><img src="/img/shop.png" style="border-radius:12px" alt="Commander Album"
-								width="300" /></a>
-						<br><br>
- 						-->
-						<h3><i class="fa fa-cog"></i> Les DreamRadios <i class="fa fa-cog"></i></h3>
-						<p class="info">This is the <a id="activeRadioName">ROCK RADIO </a><br>
-							You can change to :
-							<a class="dreamradioButton" id="rock" hidden="yes">ROCK RADIO </a> -
-							<a class="dreamradioButton" id="happy">HAPPY RADIO </a> -
-							<a class="dreamradioButton" id="zen">ZEN RADIO </a> -
-							<a class="dreamradioButton" id="trippy">TRIPPY RADIO </a>
-						</p>
 
-						<!-- MUSIC RADIO PLAYERS -->
-						<iframe class="rock" id="playerRock" width="100%" height="450" scrolling="no" frameborder="no" style="border-radius:12px"
-							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323025388&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-						</iframe>
-						<iframe class="happy" id="playerHappy" width="100%" height="450" scrolling="no" frameborder="no" style="border-radius:12px"
-							hidden="yes"
-							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/319754430&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-						</iframe>
-						<iframe class="zen" id="playerZen" width="100%" height="450" scrolling="no" frameborder="no" style="border-radius:12px"
-							hidden="yes"
-							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323029686&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-						</iframe>
-						<iframe class="trippy" id="playerTrippy" width="100%" height="450" scrolling="no" style="border-radius:12px"
-							frameborder="no" hidden="yes"
-							src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323029994&amp;color=%234a4c4c&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true">
-						</iframe>
+						<h3><i class="fa fa-cog"></i> Les DreamRadios <i class="fa fa-cog"></i></h3>
+
+						<div class="playlists">
+							<button class="playlist" data-spotify-id="spotify:playlist:1mYXYlRBQvypHTXz7alA7C">
+								Rock
+							</button>
+
+							<button class="playlist" data-spotify-id="spotify:playlist:6Hp5Ok5ApVWJRYkLBdyGx1">
+								Happy
+							</button>
+
+							<button class="playlist" data-spotify-id="spotify:playlist:3h1dqMzmlWXlC5YI7nh2a8">
+								Zen
+							</button>
+
+							<button class="playlist" data-spotify-id="spotify:playlist:3kOqFGPvMLzCYtkdYpjbqp">
+								Trippy
+							</button>
+						</div>
+
+						<!-- Embed Spotify Playlists -->
+						<div id="embed-iframe"></div>
+						<!--<iframe data-testid="embed-iframe"  
+						src="https://open.spotify.com/embed/playlist/1mYXYlRBQvypHTXz7alA7C?utm_source=generator" 
+						width="100%" height="352" frameBorder="0" allowfullscreen="" 
+						allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+						loading="lazy">
+						</iframe>-->
 						<br><br>
 
 						<h3><i class="fa fa-cog"></i> More ? <i class="fa fa-cog"></i></h3>
