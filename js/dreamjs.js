@@ -13,7 +13,8 @@ window.addEventListener('DOMContentLoaded', function () {
         // Background video portrait
         var video = document.getElementById('myVideo');
         var source = document.getElementById('videoSource');
-        source.src = '../vid/cotton_mobile.mp4'; // <-- your vertical video path
+        source.src = '../vid/cotton_mobile.mp4';
+        source.style = 'filter:opacity(70%)'
         video.classList.add('mobile-vertical-video');
         video.load();
         
