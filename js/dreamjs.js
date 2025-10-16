@@ -18,6 +18,8 @@ window.addEventListener('DOMContentLoaded', function () {
         video.classList.add('mobile-vertical-video');
         video.load();
         
+        // Activer un joli footer :)
+
         // Masquer section pokémon go aka MISC section
         //var otherSection = document.getElementById('other')
         //otherSection.style.display = "none";
