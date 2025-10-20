@@ -14,43 +14,33 @@ DREAMCSS
 /* b. Dreamcss
 /* ------------------------------------------------------------------ */
 
+  /* Prevent the footer from covering content */
+  body, html {
+    padding-bottom: 80px;   /* at least footer height + some spacing */
+  }
+
 body {
 	color:#ffffff;
   text-align: center;
 }
 
-.dreamradioButton {
-	font-family:'FARRAY-Regular';
-}
-
-#activeRadioName {
-	font-family:'FARRAY-Regular';
-	color:#ffe6cc;
-}
-
-h1 {
-	font-family:'FARRAY-Regular';
-	color:#ffe6cc;
-  text-shadow:
-      1px 1px 2px rgb(0, 0, 0),
-      0 0 1em rgb(0, 0, 0),
-      0 0 0.2em rgba(0, 0, 255, 0.47);
-}
-
-h2 {
-	font-family:'FARRAY-Regular';
-  text-shadow:
-      1px 1px 2px rgb(0, 0, 0),
-      0 0 1em rgb(0, 0, 0),
-      0 0 0.2em rgba(0, 0, 255, 0.47);
-}
-
-h3 {
-	color:#ffffff;
+h1, h2, h3, h4 {
 	text-shadow:
       1px 1px 2px rgb(0, 0, 0),
       0 0 1em rgb(0, 0, 0),
       0 0 0.2em rgba(0, 0, 255, 0.47);
+}
+
+h1 {
+	color:#ffe6cc;
+}
+
+h2, h3, h4 {
+	color:#ffffff;
+}
+
+h1, h2 {
+	font-family:'FARRAY-Regular';
 }
 
 .smoothscroll {
@@ -60,12 +50,9 @@ h3 {
 .notsmoothscroll {
 	font-family:'FARRAY-Regular';
 }
+
 a {
 	cursor: pointer;
-}
-
-.playlist {
-  font-family:'FARRAY-Regular';
 }
 
 /* ------------------------------------------------------------------
@@ -84,7 +71,7 @@ a {
 
  }
 
- /* ------------------------------------------------------------------
+/* ------------------------------------------------------------------
 /* dreamportrait on the left
 /* ------------------------------------------------------------------- */
 .dreamportrait {
@@ -111,7 +98,6 @@ a {
   min-height: 100%;
 }
 
-
 .mobile-vertical-video {
   object-fit: contain !important;
   width: 100vw !important;
@@ -123,7 +109,9 @@ a {
   z-index: -1;
 }
 
-/* Center main content on mobile */
+/* -----------------------------
+/* Center main content on mobile
+/* ----------------------------- */
 @media (max-width: 767px) {
   body, html {
     width: 100vw;
@@ -155,3 +143,53 @@ a {
   align-items: center;
   width: 100%;
 }
+
+/* -----------------------------
+/* Spotify playlists buttons
+/* ----------------------------- */
+.playlist {
+  font-family:'FARRAY-Regular';
+  cursor: pointer;
+  margin: 0 6px 8px 0;
+  transition: background-color 180ms ease, color 180ms ease, transform 120ms ease;
+  display: inline-block;
+}
+.playlist:hover {
+  transform: translateY(-1px);
+}
+
+/* Active/selected playlist */
+.playlist.active {
+  background-color: #94fadd;
+  color:#000
+}
+
+/* Blinking text */
+.blinking {
+  animation-duration: 1.5s;
+  animation-name: blink-animation;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+@keyframes blink-animation {
+  0%   { opacity:1; }
+  40%   {opacity:0; }
+  100% { opacity:1; }
+}
+
+/* custom footer */
+  .footer-custom {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;            /* adjust height if needed */
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.35);
+  }
