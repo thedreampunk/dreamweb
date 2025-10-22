@@ -148,6 +148,8 @@ a {
 /* Spotify playlists buttons
 /* ----------------------------- */
 .playlist {
+  color:#ffffff;
+  background-color: #0D8390;
   font-family:'FARRAY-Regular';
   cursor: pointer;
   margin: 0 6px 8px 0;
@@ -160,7 +162,7 @@ a {
 
 /* Active/selected playlist */
 .playlist.active {
-  background-color: #94fadd;
+  background-color: #41f0be;
   color:#000
 }
 

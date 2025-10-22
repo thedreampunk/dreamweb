@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
+
 <head>
 
 	<title>Le Dreamweb</title>
@@ -10,20 +9,21 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<meta name="title" content="Dreampunk : Le Dreamweb">
-	<meta name="description" content="Site officiel de Dreampunk : Musique, Vid&eacute;os et d'autres trucs">
+	<meta name="description" content="Dreampunk's Official Website : Music, Videos and Creative Stuff">
 	<meta name="author" content="Axel Bourdet">
-	<meta name="keywords" content="dreampunk, site, officiel, spex, spex yourself, musique, musicien, artiste, steampunk, indie, indie music, indie pop">
+	<meta name="keywords"
+		content="dreampunk, official, website, spex, spex yourself, music, musician, artist, steampunk, indie, indie music, indie pop">
 
 	<!-- Mobile Specific Metadata
    	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0">
 	<!-- Colored header -->
 	<meta name="theme-color" content="#000000">
 
 	<!--- Opengraph Metadata (Facebook, Twitter)
     ================================================== -->
 	<meta property="og:title" content="Le Dreamweb">
-	<meta property="og:description" content="Site officiel de Dreampunk : Musique, Vid&eacute;os et d'autres trucs">
+	<meta property="og:description" content="Dreampunk's Official Website : Music, Videos and Creative Stuff">
 	<meta property="og:image" content="/img/fbpicture.jpg">
 	<meta property="og:url" content="https://thedreampunk.com">
 	<meta property="og:type" content="website" /> 
@@ -78,14 +78,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
     <link rel="manifest" href="/favicon/manifest.json">
     <meta name="theme-color" content="#ffffff">
-	
+
 </head>
 
 <body>
 
 	<!-- Background Video : Cotton Cocoon
 	================================================== -->
-	<video autoplay muted loop id="myVideo" style="filter:opacity(70%)">
+	<video autoplay muted loop id="myVideo" style="filter:opacity(70%)" 
+	aria-label="Background video 'Cotton Cocoon' by Dreampunk ft. Stina Simone"
+	title="Background video 'Cotton Cocoon' by Dreampunk ft. Stina Simone">
 		<source id="videoSource" src="../vid/cotton.mp4" type="video/mp4">
 	</video>
 
@@ -99,15 +101,15 @@
 			<!-- <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 			<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a> -->
 			<li class="current">
-				<a class="smoothscroll" href="#home">Accueil</a>-
+				<a class="smoothscroll" href="#home">Home</a>-
 				<a class="smoothscroll" href="#news">News</a>-
-				<a class="smoothscroll" href="#music">Musique</a>-
-				<a class="smoothscroll" href="#videos">Vid&eacute;os</a>-
-				<a class="smoothscroll" href="#shop">Boutique</a>-
-				<!-- <a class="smoothscroll" href="#other"> Divers</a> - -->
-				<a class="smoothscroll" href="#about">&agrave; propos</a>-
+				<a class="smoothscroll" href="#music">Music</a>-
+				<a class="smoothscroll" href="#videos">Videos</a>-
+				<a class="smoothscroll" href="#shop">Shop</a>-
+				<!-- <a class="smoothscroll" href="#other"> Misc</a> - -->
+				<a class="smoothscroll" href="#about">About</a>-
 				<!-- <a class="smoothscroll" href="#contact"> Contact </a> - -->
-				<a href="/en/"><img src="../img/en.png" width="30" /></a>
+				<a href="/fr/"><img src="../img/fr.png" width="30" alt="French version"/></a>
 			</li>
 		</nav>
 
@@ -119,16 +121,17 @@
 
 				<br><br><br>
 				<!-- Logo Dreampunk -->
-				<img src="/img/dreampunk_logo_white_transparent.png" width="70%"></img>
+				<img src="/img/dreampunk_logo_white_transparent.png" width="70%" alt="Dreampunk Logo"></img>
 				<br><br>
-			<!-- DESCRIPTION -->
-			<h3>Je suis un artiste parisien bas&eacute; &agrave; Nantes.<br>
-			Pendant un temps, j'ai v&eacute;cu &agrave; Melbourne (Australie), puis &agrave; Londres.<br/>
-			Je fais de la <a class="smoothscroll" href="#music">musique</a>, des <a class="smoothscroll" href="#videos">vid&eacute;os</a> et d'autres exp&eacute;riences cr&eacute;atives.</a><br/>
-			<br>
-			J'aime l'art sous toutes ses formes, la nature, les gens bienveillants et passionn&eacute;s...<br/>
-			Eh, et si tu jetais un oeil un peu plus bas ?
-			<hr />
+				<!-- DESCRIPTION -->
+				<h3>I'm a French artist from Paris, based in Nantes (France).<br>
+					For a bit, I lived in Melbourne (Australia) and London (UK).<br>
+					I make <a class="smoothscroll" href="#music">music</a>, <a class="smoothscroll"
+						href="#videos">videos</a> and creative stuff.<br>
+					<br>
+					I love art in every way, nature, passionate and kind people...<br>
+					Maybe you'd like to scroll down now ? Come on. Don't be shy.
+					<hr />
 
 			</div>
 		</div>
@@ -160,30 +163,35 @@
 						<!-- SEPTEMBER -->
 						<aside class="three columns footer-widgets">
 							<a href="https://www.youtube.com/watch?v=dg6kQvAnCqM" target="_blank">
-								<img src="/img/news/202509-hello.jpg" style="border-radius:12px"></img></a>
-							</aside>
-							<b>SEPTEMBRE</b><br/>
-							- De retour des vacances d'&eacute;t&eacute; et du concert <br>
-							d'<b>Oasis</b> &agrave; <b>Wembley</b> ! Voici donc une petite reprise, <br>
-							mon humble version de <b><a href="https://www.youtube.com/watch?v=dg6kQvAnCqM" target="_blank">Hello, par Oasis</a></b>
-							<br><br><br>
-						<!-- JUIN -->
-						<aside class="three columns footer-widgets">						
-							<a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank" >							
-								<img src="/img/news/202506-shout.jpg" style="border-radius:12px"></img></a>
-							</aside>
-							<b>JUIN</b><br/>
-							- Nouveau morceau : <b>"Shout !"</b> avec <b>Amandine</a></b>,<br>
-							Sortie initiale le <b>6 Juin 19h</b> sur <b><a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank">YouTube</a></b>,<br>
-							puis <b>le 11 Juin</b> sur <b><a href="https://li.sten.to/dreampunk" target="_blank">toutes les plateformes</a></b> !
-							<br><br><br>										
-						<!-- PLUS -->	
-							<h3><i class="fa fa-cog"></i> Encore ? <i class="fa fa-cog"></i></h3> 
-							<p><a href="/fr/news.html">
-								Plus de news !
-							</a></p>
-					</div>
+								<img src="/img/news/202509-hello.jpg" style="border-radius:12px" alt="YouTube music video 'Hello' by Oasis"></img></a>
+						</aside>
+						<b>SEPTEMBER</b><br>
+						- Back from summer holidays and <b>Oasis</b> <br>
+						show in <b>Wembley</b> ! Here is a little cover, <br>
+						my humble rendition of <b><a href="https://www.youtube.com/watch?v=dg6kQvAnCqM"
+								target="_blank">Hello, by Oasis</a></b>
+						<br><br><br>
 
+						<!-- JUNE -->
+						<aside class="three columns footer-widgets">
+							<a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank">
+								<img src="/img/news/202506-shout.jpg" style="border-radius:12px" alt="YouTube music video 'Shout' by Dreampunk ft. Amandine"></img></a>
+						</aside>
+						<b>JUNE</b><br>
+						- New song : <b>"Shout !"</b> featuring <b>Amandine</a></b>,<br>
+						first release on <b>June 6th</b> on <b><a href="https://www.youtube.com/watch?v=B1h7ualhvAA"
+								target="_blank">YouTube</a></b>,<br>
+						then <b>June 11th</b> on <b><a href="https://li.sten.to/dreampunk" target="_blank">other
+								platforms</a></b> !
+						<br><br><br>
+
+						<!-- MOAR -->
+						<h3><i class="fa fa-cog"></i> More ? <i class="fa fa-cog"></i></h3>
+						<p><a href="/en/news.html"><b>
+									Moar News !
+								</b></a></p>
+
+					</div>
 
 				</div>
 
@@ -198,9 +206,9 @@
 	<section id="music">
 		<div class="row education">
 
-         <div class="three columns header-col">
-            <h1><span>MUSIQUE</span></h1>
-         </div>
+			<div class="three columns header-col">
+				<h1><span>MUSIC</span></h1>
+			</div>
 
 			<div class="nine columns main-col">
 
@@ -210,28 +218,28 @@
 
 						<h2><i class="fa fa-cog"></i> DreamRadios <i class="fa fa-cog"></i></h2>
 
-						<h4 class = "blinking">S&eacute;lectionnez votre DreamRadio :</h4>
+						<h4 class = "blinking">Please select your DreamRadio :</h4>
 
 						<div class="playlists">
-							<button class="playlist active" data-spotify-id="spotify:playlist:1mYXYlRBQvypHTXz7alA7C" toggle="true">
+							<button class="playlist active" data-spotify-id="spotify:playlist:1mYXYlRBQvypHTXz7alA7C" toggle="true"	aria-label="Button for the Rock Playlist">
 								Rock
 							</button>
 
-							<button class="playlist" data-spotify-id="spotify:playlist:6Hp5Ok5ApVWJRYkLBdyGx1">
+							<button class="playlist" data-spotify-id="spotify:playlist:6Hp5Ok5ApVWJRYkLBdyGx1" aria-label="Button for the Happy Playlist">
 								Happy
 							</button>
 
-							<button class="playlist" data-spotify-id="spotify:playlist:3h1dqMzmlWXlC5YI7nh2a8">
+							<button class="playlist" data-spotify-id="spotify:playlist:3h1dqMzmlWXlC5YI7nh2a8" aria-label="Button for the Chill Playlist">
 								Zen
 							</button>
 
-							<button class="playlist" data-spotify-id="spotify:playlist:3kOqFGPvMLzCYtkdYpjbqp">
+							<button class="playlist" data-spotify-id="spotify:playlist:3kOqFGPvMLzCYtkdYpjbqp" aria-label="Button for the Trippy Playlist">
 								Trippy
 							</button>
 						</div>
 
 						<!-- Embed Spotify Playlists -->
-						<div id="embed-iframe"></div>
+						<div id="embed-iframe" title="Spotify Playlist" aria-label="Spotify Playlist"></div>
 					</div>
 
 				</div>
@@ -249,9 +257,9 @@
 	<section id="videos">
 		<div class="row work">
 
-         <div class="three columns header-col">
-            <h1><span>Vid&eacute;os</span></h1>
-         </div>
+			<div class="three columns header-col">
+				<h1><span>Videos</span></h1>
+			</div>
 
 			<div class="nine columns main-col">
 
@@ -259,38 +267,44 @@
 
 					<div class="twelve columns">
 
-						<h2><i class="fa fa-cog"></i> Musique <i class="fa fa-cog"></i></h2>
+						<h2><i class="fa fa-cog"></i> Music <i class="fa fa-cog"></i></h2>
 						<!-- COTTON COCOON VIDEO -->
 						<p>
-							<b>Cotton Cocoon</b>: Mon dernier clip, avec <b>Stina Simone</b> (01/2025)<br>
+							<b>Cotton Cocoon</b>: My latest music video, with <b>Stina Simone</b> (01/2025)<br>
 						</p>
 						<iframe style="display:inline; border-radius:12px" width="336" height="189"
 							src="https://www.youtube.com/embed/rE-fivUGod4" frameborder="0" allowfullscreen
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							title="YouTube music video 'Cotton Cocoon' by Dreampunk ft. Stina Simone"
+							aria-label="YouTube music video 'Cotton Cocoon' by Dreampunk ft. Stina Simone">
 						</iframe>
 						<br>
 						<!-- SHOUT VIDEO -->
 						<p>
-							<b>Shout</b>: Mon dernier morceau, avec <b>Amandine</b> (06/2025)<br>
+							<b>Shout</b>: My latest song, with <b>Amandine</b> (06/2025)<br>
 						</p>
 						<iframe style="display:inline; border-radius:12px" width="336" height="189"
 							src="https://www.youtube.com/embed/B1h7ualhvAA" frameborder="0" allowfullscreen
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							title="YouTube music video 'Shout' by Dreampunk ft. Amandine"
+							aria-label="YouTube music video 'Shout' by Dreampunk ft. Amandine">
 						</iframe>
-						<br>
-
+						<br><br>
+						
 						<!-- TARTE VIDEO -->
 						<h2><i class="fa fa-cog"></i> Random <i class="fa fa-cog"></i></h2>
 						<p>
-							<b>Interview</b> : Parodie de documentaire ARTE
+							<b>Interview</b> : Parody video interview of the French-German channel ARTE
 						</p>
 						<iframe style="display:inline; border-radius:12px" width="336" height="189"
 							src="https://www.youtube.com/embed/LjOmA-j9YkE" frameborder="0" allowfullscreen
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							title="Youtube Parody video interview of the French-German channel ARTE"
+							aria-label="Youtube Parody video interview of the French-German channel ARTE"></iframe>
 						</iframe>
 						<br>
 
-						<h3><i class="fa fa-cog"></i> Plus ? <i class="fa fa-cog"></i></h3>
+						<h3><i class="fa fa-cog"></i> More ? <i class="fa fa-cog"></i></h3>
 						<div class="g-ytsubscribe" data-channel="SpeXYourself" data-layout="full" data-theme="dark"
 							data-count="default"></div>
 					</div>
@@ -313,7 +327,7 @@
 
             <div class="two columns header-col">
 
-               <h1><span>T&eacute;moignages</span></h1>
+               <h1><span>Testimonials</span></h1>
 
             </div>
 			<br><br><br><br>
@@ -325,7 +339,7 @@
 
                      <li>
                         <blockquote>
-                           <p>Oubliez le combo "Avocat + Vegemite". Le nouveau truc, c'est "Dreampunk + Vegemite".
+                           <p>&#171;Forget about "Avocado and Vegemite". The new thing is "Dreampunk and Vegemite".&#187;</p>
                            </p>
                            <cite>H. Jackman</cite>
                         </blockquote>
@@ -333,7 +347,7 @@
 					 
 					<li>
                        <blockquote>
-                           <p> Dreampunk ? Si vous pouviez lui dire de me rendre mon parapluie un de ces quatre...
+                           <p>&#171;Dreampunk ? What a fantastic fella... ella... ella...&#187;
                            </p>
                            <cite>Rihanna</cite>
                         </blockquote>
@@ -341,7 +355,7 @@
 					 
 					 <li>
                        <blockquote>
-                           <p>Mec, J'adorerais bosser avec ce type si j'&eacute;tais toujours dans les parages...
+                           <p>&#171;Man, I'd love to work with that guy if I was still around...&#187;
                            </p>
                            <cite>M. Jackson</cite>
                         </blockquote>
@@ -349,9 +363,9 @@
 
                      <li>
                        <blockquote>
-                           <p>Je crois que je peux dire tout &agrave; fait objectivement que Dreampunk est le meilleur artiste de tous les temps !
+                           <p>&#171;I'm really objective when I say Dreampunk is the best artist of all times !&#187;
                            </p>
-                           <cite>Maman</cite>
+                           <cite>Mum</cite>
                         </blockquote>
                      </li>
 
@@ -372,7 +386,7 @@
 		<div class="row work">
 
 			<div class="three columns header-col">
-				<h1><span>Divers</span></h1>
+				<h1><span>Misc</span></h1>
 			</div>
 
 			<div class="nine columns main-col">
@@ -380,21 +394,15 @@
 				<div class="row item">
 
 					<div class="twelve columns">
-					
-					<h3><i class="fa fa-cog"></i> Le Dreamblog <i class="fa fa-cog"></i></h3>
-					<p>
-						Des articles - ok 3 articles - en fran�ais (oui madame !) sur mes aventures australiennes : <a href="http://dreampunkinoz.blogspot.com/" target="_blank">Le Dreamblog</a><br/>
-						<a href="http://dreampunkinoz.blogspot.com/" target="_blank" ><img src="/img/blog.jpg" width="60%"></img></a><br/>		
-					</p>
-					
-					<h3><i class="fa fa-cog"></i> Pok&eacute;mon Go VS Dreampunk <i class="fa fa-cog"></i></h3>
-					<p>
-						<b>Pok&eacute;mon Go VS Dreampunk</b> est un jeu vid&eacute;o que j'ai cr&eacute;&eacute; sur <a href="https://scratch.mit.edu/" target="_blank">Scratch.</a><br/>
-						<a href="/letsplay.html" target="_blank" ><img src="/img/pkgo-vs-dreampunk.png" width="60%"></img></a><br/>		
-					</p>
-					
-					<h3><i class="fa fa-cog"></i> Plus ? <i class="fa fa-cog"></i></h3>
-					<p>Patience...</p>
+
+						<h3><i class="fa fa-cog"></i> Pok&eacute;mon Go VS Dreampunk <i class="fa fa-cog"></i></h3>
+						<p>
+							<b>Pok&eacute;mon Go VS Dreampunk</b> is a video game I created with <a
+								href="https://scratch.mit.edu/" target="_blank">Scratch.</a><br>
+							<a href="/letsplay.html" target="_blank">
+								<img src="/img/pkgo-vs-dreampunk.png" style="border-radius:12px" width="60%"></img>
+							</a><br>
+						</p>
 
 					</div>
 
@@ -411,7 +419,7 @@
 		<div class="row products">
 			<br/><br/>
 			<div class="three columns header-col">
-				<h1><span>Boutique</span></h1>
+				<h1><span>Shop</span></h1>
 			</div>
 		 
 			<div class="nine columns main-col">
@@ -423,32 +431,32 @@
 						<!-- COMBO CD-->
 							<aside class="four columns footer-widgets">
 							<a href="https://dreampunk.gumroad.com/l/combo-cd-en" target="_blank" >							
-								<img src="/img/shop/combo-cd.png" style="border-radius:12px; margin:10px"></img>
+								<img src="/img/shop/combo-cd.png" style="border-radius:12px; margin:10px" alt="My 2 albums, CD version + WAV/MP3 download"></img>
 							</a>
 							</aside>
 						<!-- OPA CD-->
 							<aside class="four columns footer-widgets">
 							<a href="https://dreampunk.gumroad.com/l/opa-cd-en" target="_blank" >							
-								<img src="/img/shop/opa-cd.png" style="border-radius:12px; margin:10px"></img>
+								<img src="/img/shop/opa-cd.png" style="border-radius:12px; margin:10px" alt="'Outback Panic Attack !' CD album (2019) + WAV/MP3 download"></img>
 							</a>
 							</aside>
 						<!-- FOS CD-->
 							<aside class="four columns footer-widgets">
 							<a href="https://dreampunk.gumroad.com/l/fos-cd-en" target="_blank" >							
-								<img src="/img/shop/fos-cd.png" style="border-radius:12px; margin:10px"></img>
+								<img src="/img/shop/fos-cd.png" style="border-radius:12px; margin:10px" alt="'Fistful of Sounds' CD album (2013) + WAV/MP3 download"></img>
 							</a>
 							</aside>
 						<h2><i class="fa fa-cog"></i> WAV/MP3 <i class="fa fa-cog"></i></h2>
 						<!-- OPA MP3 -->
 							<aside class="four columns footer-widgets">
 							<a href="https://dreampunk.gumroad.com/l/opa-mp3-en" target="_blank" >							
-								<img src="/img/shop/opa-mp3.png" style="border-radius:12px; margin:10px"></img>
+								<img src="/img/shop/opa-mp3.png" style="border-radius:12px; margin:10px" alt="'Outback Panic Attack !' MP3 album download (2019)"></img>
 							</a>
 							</aside>
 						<!-- FOS MP3 -->
 							<aside class="four columns footer-widgets">
 							<a href="https://dreampunk.gumroad.com/l/fos-mp3-en" target="_blank" >							
-								<img src="/img/shop/fos-mp3.png" style="border-radius:12px; margin:10px"></img>
+								<img src="/img/shop/fos-mp3.png" style="border-radius:12px; margin:10px" alt="'Fistful of Sounds' MP3 album download (2013)"></img>
 							</a>
 							</aside>
 					</div>
@@ -466,22 +474,20 @@
 
 			<div class="three columns">
 
-				<img class="profile-pic" src="/img/profilepic.jpg" alt="" />
+				<img class="profile-pic" src="/img/profilepic.jpg" alt="A picture of a surprised Dreampunk" />
 
 			</div>
 
 			<div class="nine columns main-col">
 
-				<h2><i class="fa fa-cog"></i> &agrave; propos</h2>
+				<h2><i class="fa fa-cog"></i> About Me</h2>
 
-
-	            <p>J'aime cette id&eacute;e d'&ecirc;tre 100% libre avec mon projet.<br/>
-				J'ai fait ce choix de le garder en tant que passion, plut&ocirc;t que d'en d&eacute;pendre pour vivre.<br/>
-				Pour moi, c'&eacute;tait le choix le plus sain, qui me permettait de l'aborder de la fa&#231;on la plus sinc&egrave;re.<br/>
-				Explorer de nouveaux terrains artistiques selon les envies, ou jouer avec de nouveaux styles musicaux : 
-				Si je veux faire, disons du reggae... je peux ! (je dis pas que &#231;a sonnera bien...)<br/>
-	            </p>
-
+				<p>I like the idea of being 100% free with my project.<br>
+					I made the choice to keep it as a passion, rather than depending on it to live.<br>
+					This was the healthiest path to me, allowing me to come up with the most sincere stuff.<br>
+					Exploring new arts whenever I feel like it, or playing with a new music genre :<br>
+					If I wanna try out, let's say reggae... I can ! (not saying it will sound nice...)<br>
+				</p>
 
 			</div>
 
@@ -553,8 +559,9 @@
 		
 		<!-- LICENCE RIGHTS -->
 		<ul class="copyright">
-			<li>Original web template by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>
-				&copy; Copyright CeeVee</li><br>
+			<li>Original web template by 
+				<a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>
+				&copy; Copyright CeeVee</li>
 			<li>Webdev : &copy; Copyright Dreampunk 2026 - Some Rights Reserved</li>
 		</ul>
 
@@ -565,9 +572,8 @@
 		<div id="go-top">
 			<a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
 		</div>
-
 	</footer>
-
+	
 </body>
 
 </html>
