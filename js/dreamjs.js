@@ -31,13 +31,19 @@ window.addEventListener('DOMContentLoaded', function () {
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   const element = document.getElementById('embed-iframe');
   const options = {
-      uri: 'spotify:playlist:1mYXYlRBQvypHTXz7alA7C'
+      uri: 'spotify:playlist:1mYXYlRBQvypHTXz7alA7C',
+      title: 'Dreampunk Spotify Playlist',
+      ariaLabel: 'Spotify Player: Dreampunk Playlist',
     };
     const callback = (EmbedController) => {
     document.querySelectorAll('.playlist').forEach(
         playlist => {
         playlist.addEventListener('click', () => {
             EmbedController.loadUri(playlist.dataset.spotifyId)
+            // Add title and aria-label attributes to iframe for accessibility
+            const iframe = document.querySelector('#embed-iframe iframe');
+            iframe.setAttribute('title', 'Spotify Player: ' + playlist.dataset.spotifyTitle);
+            iframe.setAttribute('aria-label', 'Spotify Player: ' + playlist.dataset.spotifyTitle);
             // untoggle previous active button
             document.querySelectorAll('.playlist').forEach(function(b){ b.classList.remove('active'); });
             // toggle active button
