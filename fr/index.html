@@ -16,7 +16,7 @@
 
 	<!-- Mobile Specific Metadata
    	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1.0">
 	<!-- Colored header -->
 	<meta name="theme-color" content="#000000">
 
@@ -40,11 +40,11 @@
 	<!-- Javascript
    	================================================== -->
    	<!-- jQuery is loaded before other js files -->
-   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="/js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="/js/jquery.flexslider.js"></script>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- If jQuery fails to load, load local copy -->
 	<script>window.jQuery || document.write('<script src="https://thedreampunk.com/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/js/jquery.flexslider.js"></script>
 	<!-- Other JS files -->
 	<script defer src="/js/modernizr.js"></script>
 	<script defer src="https://apis.google.com/js/platform.js"></script>
@@ -85,7 +85,9 @@
 
 	<!-- Background Video : Cotton Cocoon
 	================================================== -->
-	<video autoplay muted loop id="myVideo" style="filter:opacity(70%)">
+	<video autoplay muted loop id="myVideo" style="filter:opacity(70%)" 
+	aria-label="Video arriere-plan de 'Cotton Cocoon' par Dreampunk avec Stina Simone"
+	title="Video arriere-plan de 'Cotton Cocoon' par Dreampunk avec Stina Simone">
 		<source id="videoSource" src="../vid/cotton.mp4" type="video/mp4">
 	</video>
 
@@ -107,7 +109,7 @@
 				<!-- <a class="smoothscroll" href="#other"> Divers</a> - -->
 				<a class="smoothscroll" href="#about">&agrave; propos</a>-
 				<!-- <a class="smoothscroll" href="#contact"> Contact </a> - -->
-				<a href="/en/"><img src="../img/en.png" width="30" /></a>
+				<a href="/en/"><img src="../img/en.png" width="30" alt="English version" /></a>
 			</li>
 		</nav>
 
@@ -119,7 +121,7 @@
 
 				<br><br><br>
 				<!-- Logo Dreampunk -->
-				<img src="/img/dreampunk_logo_white_transparent.png" width="70%"></img>
+				<img src="/img/dreampunk_logo_white_transparent.png" width="70%" alt="Logo Dreampunk"></img>
 				<br><br>
 			<!-- DESCRIPTION -->
 			<h3>Je suis un artiste parisien bas&eacute; &agrave; Nantes.<br>
@@ -160,7 +162,7 @@
 						<!-- SEPTEMBER -->
 						<aside class="three columns footer-widgets">
 							<a href="https://www.youtube.com/watch?v=dg6kQvAnCqM" target="_blank">
-								<img src="/img/news/202509-hello.jpg" style="border-radius:12px"></img></a>
+								<img src="/img/news/202509-hello.jpg" style="border-radius:12px" alt="Video YouTube, reprise de 'Hello' d'Oasis"></img></a>
 							</aside>
 							<b>SEPTEMBRE</b><br/>
 							- De retour des vacances d'&eacute;t&eacute; et du concert <br>
@@ -170,7 +172,7 @@
 						<!-- JUIN -->
 						<aside class="three columns footer-widgets">						
 							<a href="https://www.youtube.com/watch?v=B1h7ualhvAA" target="_blank" >							
-								<img src="/img/news/202506-shout.jpg" style="border-radius:12px"></img></a>
+								<img src="/img/news/202506-shout.jpg" style="border-radius:12px" alt="Video Youtube de 'Shout' par Dreampunk avec Amandine"></img></a>
 							</aside>
 							<b>JUIN</b><br/>
 							- Nouveau morceau : <b>"Shout !"</b> avec <b>Amandine</a></b>,<br>
@@ -231,7 +233,7 @@
 						</div>
 
 						<!-- Embed Spotify Playlists -->
-						<div id="embed-iframe"></div>
+						<div id="embed-iframe" title="Playlist Spotify" aria-label="Playlist Spotify"></div>
 					</div>
 
 				</div>
@@ -266,7 +268,9 @@
 						</p>
 						<iframe style="display:inline; border-radius:12px" width="336" height="189"
 							src="https://www.youtube.com/embed/rE-fivUGod4" frameborder="0" allowfullscreen
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							title="Video YouTube, Clip de 'Cotton Cocoon' par Dreampunk avec Stina Simone"
+							aria-label="Video YouTube, Clip de 'Cotton Cocoon' par Dreampunk avec Stina Simone">
 						</iframe>
 						<br>
 						<!-- SHOUT VIDEO -->
@@ -275,7 +279,9 @@
 						</p>
 						<iframe style="display:inline; border-radius:12px" width="336" height="189"
 							src="https://www.youtube.com/embed/B1h7ualhvAA" frameborder="0" allowfullscreen
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							title="Video Youtube de 'Shout' par Dreampunk avec Amandine"
+							aria-label="Video Youtube de 'Shout' par Dreampunk avec Amandine">
 						</iframe>
 						<br>
 
@@ -286,13 +292,15 @@
 						</p>
 						<iframe style="display:inline; border-radius:12px" width="336" height="189"
 							src="https://www.youtube.com/embed/LjOmA-j9YkE" frameborder="0" allowfullscreen
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+							title="Video YouTube, Parodie de documentaire ARTE"
+							aria-label="Video YouTube, Parodie de documentaire ARTE"></iframe>
 						</iframe>
 						<br>
 
 						<h3><i class="fa fa-cog"></i> Plus ? <i class="fa fa-cog"></i></h3>
 						<div class="g-ytsubscribe" data-channel="SpeXYourself" data-layout="full" data-theme="dark"
-							data-count="default"></div>
+							data-count="default" title="Bouton YouTube S'abonner a Dreampunk" aria-label="YouTube Subscribe Button"></div>
 					</div>
 
 				</div>
@@ -466,7 +474,7 @@
 
 			<div class="three columns">
 
-				<img class="profile-pic" src="/img/profilepic.jpg" alt="" />
+				<img class="profile-pic" src="/img/profilepic.jpg" alt="Photo portrait de Dreampunk surpris" />
 
 			</div>
 
@@ -528,17 +536,17 @@
 					<ul class="social">
 						<li>
 							<a href="https://www.youtube.com/c/dreampunk" target="_blank"><i
-									class="fa fa-youtube"></i></a>
+									class="fa fa-youtube" aria-label="YouTube: Dreampunk"></i></a>
 							<a href="https://www.instagram.com/thedreampunk/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
+									class="fa fa-instagram" aria-label="Instagram: Dreampunk"></i></a>
 							<a href="https://open.spotify.com/artist/7rAqV3xGSrUmJqSNioQfTh" target="_blank"><i
-									class="fa fa-spotify"></i></a>
+									class="fa fa-spotify" aria-label="Spotify: Dreampunk"></i></a>
 							<a href="https://www.deezer.com/en/artist/15365325" target="_blank"><i
-									class="fa fa-bar-chart"></i></a>
+									class="fa fa-bar-chart" aria-label="Deezer: Dreampunk"></i></a>
 							<a href="https://itunes.apple.com/us/artist/dreampunk/1412604665" target="_blank"><i
-									class="fa fa-apple"></i></a>
+									class="fa fa-apple" aria-label="Apple Music: Dreampunk"></i></a>
 							<a href="https://soundcloud.com/thedreampunk" target="_blank"><i
-									class="fa fa-soundcloud"></i></a>
+									class="fa fa-soundcloud" aria-label="SoundCloud: Dreampunk"></i></a>
 						</li>
 					</ul>
 				</h1>
@@ -553,17 +561,18 @@
 		
 		<!-- LICENCE RIGHTS -->
 		<ul class="copyright">
-			<li>Original web template by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>
-				&copy; Copyright CeeVee</li><br>
-			<li>Webdev : &copy; Copyright Dreampunk 2026 - Some Rights Reserved</li>
+			<li>Template d'origine par
+				<a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>
+				&copy; Copyright CeeVee</li>
+			<li>Webdev : &copy; Copyright Dreampunk 2026 - Licence Creative Commons</li>
 		</ul>
 
-		<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+		<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" aria-label="Creative Commons Licence">
 			<img src="/img/licence_creative_commons.png" alt="Licence Creative Commons" />
 		</a>
 		
 		<div id="go-top">
-			<a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
+			<a class="smoothscroll" title="Back to Top" aria-label="Back to Top" href="#home"><i class="icon-up-open"></i></a>
 		</div>
 
 	</footer>
