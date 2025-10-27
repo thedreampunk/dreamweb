@@ -40,10 +40,6 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
         playlist => {
         playlist.addEventListener('click', () => {
             EmbedController.loadUri(playlist.dataset.spotifyId)
-            // Add title and aria-label attributes to iframe for accessibility
-            const iframe = document.querySelector('#embed-iframe iframe');
-            iframe.setAttribute('title', 'Spotify Player: ' + playlist.dataset.spotifyTitle);
-            iframe.setAttribute('aria-label', 'Spotify Player: ' + playlist.dataset.spotifyTitle);
             // untoggle previous active button
             document.querySelectorAll('.playlist').forEach(function(b){ b.classList.remove('active'); });
             // toggle active button
