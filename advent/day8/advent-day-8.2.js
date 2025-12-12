@@ -61,7 +61,6 @@ console.log('Hello, day 8!')
 
 
 // CODE - Le vrai
-let nbCircuitsToConnect = 1000
 let boxesTab = []
 let distancesTab = []
 let circuitsTab = []
@@ -113,6 +112,13 @@ function addCircuitToTab(indexBox1, indexBox2){
                 // On supprime le circuit qui a été fusionné
                 circuitsTab.splice(indexCircuit2,1)
             }
+            // Detecter si on a un mégacircuit
+            if ((circuitsTab[0].length) == boxesTab.length){
+                // Alors multiplier les 2 coordonnées X des boxes
+                let res = boxesTab[indexBox1][0] * boxesTab[indexBox2][0]
+                console.log("CAS 1")
+                console.log(res)
+            }
             return circuitsTab
         }
     }
@@ -127,6 +133,13 @@ function addCircuitToTab(indexBox1, indexBox2){
     } else {
         // Simplement ajouter à circuitsTab le nouveau tableau [indexBox1,indexBox2]
         circuitsTab.push([indexBox1,indexBox2])
+    }
+    // Detecter si on a un mégacircuit
+    if ((circuitsTab[0].length) == boxesTab.length){
+        // Alors multiplier les 2 coordonnées X des boxes
+        let res = boxesTab[indexBox1][0] * boxesTab[indexBox2][0]
+        console.log("CAS 2")
+        console.log(res)
     }
     return circuitsTab
 
@@ -158,19 +171,13 @@ jQuery.get('day8-input.txt', function(data) {
     console.log(distancesTabTries)
 
     // Etape 4 : Parcourir ce tableau trié des distances
-    // pour connecter les circuits (au maximum : nbCircuitsToConnect)
-    for (let i=0; i<nbCircuitsToConnect; i++){
+    // pour connecter les circuits
+    for (let i=0; i<distancesTabTries.length; i++){
         let indexFirstBox = distancesTabTries[i].x
         let indexSecondBox = distancesTabTries[i].y
         circuitsTab = addCircuitToTab(indexFirstBox,indexSecondBox)
+        // On s'arrête quand on a un mégacircuit
+        if ((circuitsTab[0].length) == boxesTab.length) break
     }
-    console.log(circuitsTab)
-
-    let sizesTabTries = getCircuitsSizesTab().sort((a, b) => b - a);
-    let res = 1
-    for (let i=0; i<3; i++){
-        res *= sizesTabTries[i]
-    }
-    console.log(res)
 
 }, 'text');
